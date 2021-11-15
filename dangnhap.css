@@ -1,0 +1,82 @@
+.thanhtieude {
+    margin-top: 50px;
+}
+
+.thanhtieude h2 {
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 21px;
+    text-transform: capitalize;
+}
+
+.thanhtieude h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 11%;
+    width: 78%;
+    border-bottom: 3px solid #e89105;
+    padding-top: 32px;
+}
+
+.thanhtieude h2::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    width: 100%;
+    border-bottom: 3px solid #e8e8e8;
+    padding-top: 32px;
+}
+
+.fontroboto {
+    margin-top: 45px;
+}
+
+.fontroboto h3,
+.fontroboto h4 {
+    color: #2d2a2a;
+    line-height: 1.4;
+    font-weight: bold;
+    position: relative;
+}
+
+.fontroboto h3::after {
+    content: '';
+    position: absolute;
+    bottom: 18px;
+    left: 46%;
+    border-bottom: 2px solid #e7e7e7;
+    width: 50%;
+}
+
+.fontroboto h4::after {
+    content: '';
+    position: absolute;
+    bottom: 16px;
+    border-bottom: 2px solid #e7e7e7;
+    width: 35%;
+    left: 54%;
+}
+
+.textL {
+    text-align: left;
+}
+
+.fontroboto p {
+    color: hsl(0, 0%, 47%);
+    line-height: 26.5px;
+    margin: 0px 0px 20px;
+}
+
+@media (max-width:576px) {
+    .fontroboto h4::after {
+        content: '';
+        position: absolute;
+        bottom: 16px;
+        border-bottom: 2px solid #e7e7e7;
+        width: 35%;
+        left: 54%;
+    }
+}
