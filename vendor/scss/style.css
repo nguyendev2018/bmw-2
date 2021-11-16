@@ -14,8 +14,12 @@ ul {
   list-style: none;
 }
 
+form {
+  width: 100%;
+}
+
 .input-control:focus {
-  border-color: #feb518;
+  border-color: #feb518 !important;
 }
 
 .col-center {
@@ -76,14 +80,6 @@ p {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-input:focus {
-  border: none;
-}
-
-input:focus-visible {
-  border: none;
 }
 
 .header-authentication {
@@ -1102,38 +1098,66 @@ input:focus-visible {
 }
 
 .general-body {
+  width: 80%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: 3fr 2fr;
+      grid-template-columns: 3fr 2fr;
+  margin: 0 auto;
 }
 
 .general-body--left {
   background-image: url("../../../images/login-register/login.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
   height: 400px;
 }
 
-.general-body .input-item {
-  position: relative;
+.general-body--right {
+  padding-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.general-body .input-item input {
+.general-body--right .input-item {
+  position: relative;
+  margin-top: 30px;
+}
+
+.general-body--right .input-item input {
   padding: 9px 10px;
   border-radius: 30px;
   border-color: #feb518;
+  width: 100%;
 }
 
-.general-body .input-item input::-webkit-input-placeholder {
+.general-body--right .input-item input::-webkit-input-placeholder {
   padding-left: 25px;
 }
 
-.general-body .input-item .icon {
+.general-body--right .input-item .icon {
   position: absolute;
   top: 14px;
   left: 14px;
+}
+
+a.forgot {
+  font-size: 15px;
+  color: #feb518;
+}
+
+a.forgot:hover {
+  color: #feb518 !important;
 }
 
 .font-oswarld {
