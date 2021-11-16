@@ -1033,6 +1033,17 @@ body {
   color: #999;
 }
 
+@media screen and (max-width: 1024px) {
+  .main .cardBox {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .main .details {
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .navigation {
     left: -300px;
@@ -1051,17 +1062,6 @@ body {
   .cardBox {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .main .cardBox {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
-  .main .details {
-    -ms-grid-columns: 2fr 1fr;
-        grid-template-columns: 2fr 1fr;
   }
 }
 

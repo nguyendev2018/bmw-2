@@ -1,0 +1,9 @@
+.general-body{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    &--left{
+    background-image: url(../../../images/login-register/login.jpg);
+    background-size:cover ;
+    background-repeat:no-repeat ;
+    }
+}
