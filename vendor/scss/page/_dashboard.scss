@@ -36,9 +36,7 @@
                     height: 60px;
                     line-height: 70px;
                     text-align: center;
-                    ion-icon {
-                        font-size: 1.75em;
-                    }
+                 
                 }
                 .title {
                     position: relative;
@@ -159,7 +157,7 @@
             position: absolute;
             top: 0;
             left: 10px;
-            font-size: 1.2em;
+            font-size: 24px;
         }
     }
 
@@ -389,6 +387,17 @@
         }
     }
 }
+//ANCHOR 1024
+@media screen and (max-width:1024px) {
+    .main .cardBox{
+        grid-template-columns: repeat(2,1fr);
+
+    }
+    .main .details{
+        grid-template-columns:2fr 1fr;
+    }
+}
+//ANCHOR 991
 @media screen and (max-width:991px) {
     .navigation{
         left: -300px;
@@ -407,8 +416,9 @@
     .cardBox{
         grid-template-columns: repeat(2,1fr);
     }
-
 }
+
+//ANCHOR 768
 @media screen and(max-width:768px) {
     .details{
         grid-template-columns: repeat(1,1fr);
@@ -420,6 +430,7 @@
         white-space: nowrap;
     }
 }
+//ANCHOR 480
 @media screen and (max-width:480px) {
     .cardBox{
         grid-template-columns: repeat(1,1fr);

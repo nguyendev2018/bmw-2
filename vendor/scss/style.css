@@ -675,10 +675,6 @@ body {
   text-align: center;
 }
 
-.navigation > ul li a .icon ion-icon {
-  font-size: 1.75em;
-}
-
 .navigation > ul li a .title {
   position: relative;
   display: block;
@@ -801,7 +797,7 @@ body {
   position: absolute;
   top: 0;
   left: 10px;
-  font-size: 1.2em;
+  font-size: 24px;
 }
 
 .main .user {
@@ -1055,6 +1051,17 @@ body {
   .cardBox {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main .cardBox {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .main .details {
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
   }
 }
 
