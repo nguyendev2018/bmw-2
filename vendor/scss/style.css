@@ -1127,6 +1127,8 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+  top: 50px;
 }
 
 .general-body--right .input-item {
@@ -1158,6 +1160,49 @@ a.forgot {
 
 a.forgot:hover {
   color: #feb518 !important;
+}
+
+.button-form {
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  display: block;
+  background-image: -webkit-gradient(linear, left top, right top, from(#dc9b10), to(#feb518));
+  background-image: linear-gradient(to right, #dc9b10, #feb518);
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  color: white;
+}
+
+.login .list-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login .list-icon .item-icon {
+  font-size: 30px;
+  padding-right: 25px;
+}
+
+.login .list-icon .item-icon:last-child {
+  padding-right: 0;
+}
+
+.login .list-icon .item-icon svg {
+  color: #000000b5  !important;
 }
 
 .font-oswarld {

@@ -20,6 +20,8 @@
             align-items: center;
          
             flex-direction: column;
+            position: relative;
+            top: 50px;
             .input-item{
                 position: relative;
                 margin-top: 30px;
@@ -45,5 +47,37 @@ a.forgot{
     color: $yellow_bold;
     &:hover{
         color: $yellow_bold !important;
+    }
+}
+.button-form{
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+   
+    display: block;
+    background-image: linear-gradient( to right,#dc9b10, $yellow_bold); ;
+     display: flex !important;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 30px;
+        color: white;
+
+}
+.login{
+    .list-icon{
+        display: flex;
+        justify-content: center;
+        .item-icon{
+            font-size: 30px;
+           
+            padding-right: 25px;
+            &:last-child{
+                padding-right: 0;
+            }
+            svg{
+                color: #000000b5  !important;
+            }
+        }
     }
 }
