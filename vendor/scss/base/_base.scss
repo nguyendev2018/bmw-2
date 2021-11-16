@@ -4,13 +4,15 @@
   }
  body{
    overflow-x: hidden;
+   font-family: "Roboto Slab", serif;
+   font-weight: 400;
  }
   ul {
     margin: 0;
     list-style: none;
   }
-  input:focus{
-    border: none;
+  .input-control:focus{
+  border-color: $yellow_bold !important;
   }
   .col-center {
     display: flex;

@@ -1,11 +1,28 @@
 .general-body{
+    width: 50%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    grid-gap: 40px; 
     &--left{
     background-image: url("../../../images/login-register/login.jpg");
     background-size:cover ;
     background-repeat:no-repeat ;
     width: 100%;
     height: 400px;
+    }
+    .input-item{
+        position: relative;
+        input{
+            padding: 9px 10px ;
+        border-radius: 30px;
+        border-color: $yellow_bold;
+        }input::-webkit-input-placeholder{
+            padding-left: 25px;
+        }
+        .icon{
+            position: absolute;
+            top: 14px;
+            left: 14px;
+        }
     }
 }
