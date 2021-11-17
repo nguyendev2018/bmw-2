@@ -1583,12 +1583,10 @@ video {
   border: 1px solid #777777;
 }
 
-.founder .table-list--item:focus-visible {
-  border: none;
-}
-
-.founder .table-list--item:focus {
-  border: none;
+input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .slide-limit {

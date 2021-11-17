@@ -298,18 +298,13 @@ video {
     &--item {
       padding: 10px 20px;
       border: 1px solid #777777;
-
-      &:focus-visible {
-        border: none;
-      }
-
-      &:focus {
-        border: none;
-      }
     }
   }
 }
+input{
+  appearance: none;
 
+}
 
 
 //ANCHOR slide-limit
