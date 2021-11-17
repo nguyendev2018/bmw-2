@@ -163,21 +163,10 @@
     let content = document.querySelectorAll('.box-show');
     let btn_cancel = document.querySelectorAll('.btn-cancel');
     for (let i = 0; i < nut.length; i++) {
-        nut[i].addEventListener("click", function () {
-            let btnNut = this;
+        nut[i].addEventListener("click", function () {4
             let content_show = this.getAttribute("data-show");
             let current_show = document.getElementById(content_show);
-            current_show.querySelector(".btn-cancel").onclick = function (e) {
-                current_show.classList.remove("show_hidden");
-                btnNut.classList.remove("blue");
-                this.onclick = null;
-                current_show.querySelector(".btn-save").onclick = null;
-            }
-            current_show.querySelector(".btn-save").onclick = function (e) {
-                current_show.classList.remove("show_hidden");
-                this.onclick = null;
-                current_show.querySelector(".btn-cancel").onclick = null;
-            }
+            console.log(current_show);
             current_show.classList.toggle("show_hidden");
         });
     }
