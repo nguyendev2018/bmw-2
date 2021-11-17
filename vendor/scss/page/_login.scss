@@ -1,5 +1,5 @@
 .general-body {
-  
+
     width: 70%;
     display: grid;
     grid-template-columns: 3fr 2fr;
@@ -11,6 +11,11 @@
     transform: translate(-50%, -50%);
     background: white;
     box-shadow: 2px 1px 9px 0px #84808059;
+    transform: scale(0);
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .3s;
+    &.active {
+        transform: scale(1);
+    }
     &--left {
         background-image: url("../../../images/login-register/login.jpg");
         background-size: cover;
@@ -18,6 +23,7 @@
         background-position: center;
         width: 100%;
     }
+
     &--right {
         padding-right: 40px;
         padding-bottom: 40px;
@@ -25,21 +31,33 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-     margin-top: 40px;
+        margin-top: 40px;
         background: white;
+
+        &> .icon {
+            font-size: 20px;
+            cursor: pointer;
+            position: absolute;
+            top: 12px;
+            right: 14px;
+          
+        }
 
         .input-item {
             position: relative;
             margin-top: 30px;
+
             input {
                 padding: 9px 10px;
                 border-radius: 30px;
                 border-color: $yellow_bold;
                 width: 100%;
             }
+
             input::-webkit-input-placeholder {
                 padding-left: 25px;
             }
+
             .icon {
                 margin-bottom: 30px;
                 position: absolute;
@@ -48,14 +66,17 @@
             }
         }
     }
- a.text-form {
+
+    a.text-form {
         color: $yellow-bold;
         float: right;
+
         &:hover {
             color: $yellow-bold !important;
         }
     }
 }
+
 a.forgot {
     font-size: 15px;
     color: $yellow_bold;
@@ -81,51 +102,61 @@ a.forgot {
     color: white;
 
 }
+
 .login {
+
     // opacity: 0;
     // visibility: hidden;
     .list-icon {
         display: flex;
         justify-content: center;
         margin-bottom: 20px;
+
         .item-icon {
             font-size: 30px;
             padding-right: 25px;
+
             &:last-child {
                 padding-right: 0;
             }
+
             svg {
                 color: #000000b5 !important;
             }
         }
     }
 }
-.register{
-    &.general-body{
-        .general-body--left{
+
+.register {
+    &.general-body {
+        .general-body--left {
             background-image: url("../../../images/login-register/register.jpg");
         }
     }
 }
-@media screen and (max-width:768px) {
-    .general-body{
-        grid-template-columns: 3fr 4fr;
-        &--left{
 
-        }
-        &--right{
+@media screen and (max-width:768px) {
+    .general-body {
+        grid-template-columns: 3fr 4fr;
+
+        &--left {}
+
+        &--right {
             margin-top: 0;
-           
+
         }
     }
 }
+
 @media screen and(max-width:500px) {
-    .general-body{
-        grid-template-columns: repeat(1,1fr);
-        &--left{
+    .general-body {
+        grid-template-columns: repeat(1, 1fr);
+
+        &--left {
             height: 200px;
         }
-        &--right{
+
+        &--right {
             padding-left: 0;
             margin-top: 30px;
         }
