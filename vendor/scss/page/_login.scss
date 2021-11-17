@@ -1,27 +1,33 @@
 .general-body {
-    &.login{
-        &--left{
-            background-image: url("../../../images/login-register/login.jpg");
-        }
-    }
-    width: 80%;
+  
+    width: 70%;
     display: grid;
     grid-template-columns: 3fr 2fr;
     margin: 0 auto;
+    position: fixed;
+    z-index: 3;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    box-shadow: 2px 1px 9px 0px #84808059;
     &--left {
-        
+        background-image: url("../../../images/login-register/login.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         width: 100%;
     }
     &--right {
+        padding-right: 40px;
+        padding-bottom: 40px;
         padding-left: 40px;
         display: flex;
         align-items: center;
         flex-direction: column;
      margin-top: 40px;
         background: white;
+
         .input-item {
             position: relative;
             margin-top: 30px;
@@ -76,6 +82,8 @@ a.forgot {
 
 }
 .login {
+    // opacity: 0;
+    // visibility: hidden;
     .list-icon {
         display: flex;
         justify-content: center;
@@ -96,6 +104,30 @@ a.forgot {
     &.general-body{
         .general-body--left{
             background-image: url("../../../images/login-register/register.jpg");
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .general-body{
+        grid-template-columns: 3fr 4fr;
+        &--left{
+
+        }
+        &--right{
+            margin-top: 0;
+           
+        }
+    }
+}
+@media screen and(max-width:500px) {
+    .general-body{
+        grid-template-columns: repeat(1,1fr);
+        &--left{
+            height: 200px;
+        }
+        &--right{
+            padding-left: 0;
+            margin-top: 30px;
         }
     }
 }

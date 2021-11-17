@@ -88,6 +88,7 @@ p {
 
 .header-authentication span {
   padding-right: 10px;
+  cursor: pointer;
 }
 
 .header-authentication span.icon-cart {
@@ -1098,19 +1099,25 @@ p {
 }
 
 .general-body {
-  width: 80%;
+  width: 70%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 3fr 2fr;
       grid-template-columns: 3fr 2fr;
   margin: 0 auto;
-}
-
-.general-body.login--left {
-  background-image: url("../../../images/login-register/login.jpg");
+  position: fixed;
+  z-index: 3;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: white;
+  -webkit-box-shadow: 2px 1px 9px 0px #84808059;
+          box-shadow: 2px 1px 9px 0px #84808059;
 }
 
 .general-body--left {
+  background-image: url("../../../images/login-register/login.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1118,6 +1125,8 @@ p {
 }
 
 .general-body--right {
+  padding-right: 40px;
+  padding-bottom: 40px;
   padding-left: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1220,6 +1229,30 @@ a.forgot:hover {
 
 .register.general-body .general-body--left {
   background-image: url("../../../images/login-register/register.jpg");
+}
+
+@media screen and (max-width: 768px) {
+  .general-body {
+    -ms-grid-columns: 3fr 4fr;
+        grid-template-columns: 3fr 4fr;
+  }
+  .general-body--right {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .general-body {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .general-body--left {
+    height: 200px;
+  }
+  .general-body--right {
+    padding-left: 0;
+    margin-top: 30px;
+  }
 }
 
 .font-oswarld {
