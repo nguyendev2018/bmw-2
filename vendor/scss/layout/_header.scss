@@ -147,15 +147,15 @@
   z-index: 99;
   background: #222222;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
-  display: none;
+  transform: translateX(100%);
 
   &.hide-bar {
-    display: block;
+  
     transform: translateX(100%);
   }
 
   &.show-bar {
-    display: block;
+  
     transform: translateX(0%);
   }
 

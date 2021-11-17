@@ -250,17 +250,16 @@ p {
   background: #222222;
   -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
-  display: none;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 .header-mobile.hide-bar {
-  display: block;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
 }
 
 .header-mobile.show-bar {
-  display: block;
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
 }
@@ -1109,20 +1108,18 @@ p {
   z-index: 3;
   top: 55%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(0);
+          transform: translateX(-50%) translateY(-50%) scale(0);
   background: white;
   -webkit-box-shadow: 2px 1px 9px 0px #84808059;
           box-shadow: 2px 1px 9px 0px #84808059;
-  -webkit-transform: scale(0);
-          transform: scale(0);
   -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
   transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
 }
 
 .general-body.active {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+          transform: translateX(-50%) translateY(-50%) scale(1);
 }
 
 .general-body--left {
@@ -1151,7 +1148,7 @@ p {
   background: white;
 }
 
-.general-body--right > .icon {
+.general-body--right > .btn-cancel {
   font-size: 20px;
   cursor: pointer;
   position: absolute;
@@ -1345,7 +1342,8 @@ a.forgot:hover {
 .banner-list--item.item-1, .banner-list--item.item-2, .banner-list--item.item-3 {
   background-size: cover;
   background-repeat: no-repeat;
-  height: calc(100vh - 170px);
+  height: calc(100vh - 150px);
+  display: block !important;
   background-position: center center;
 }
 
