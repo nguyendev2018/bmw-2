@@ -42,6 +42,36 @@
         </form>
     </div>
 </div>
+<!-- ANCHOR register -->
+<div class="register general-body box-show" id="register">
+    <div class="general-body--left">
+    </div>
+    <div class="general-body--right">
+        <i class="fal fa-times btn-cancel"></i>
+        <h2>Register </h2>
+        <form action="">
+            <div class="input-item">
+                <i class="fas fa-user icon"></i>
+                <input type="text"  class="input-control" placeholder="username">
+            </div>
+            <div class="input-item">
+                <i class="fas fa-user icon"></i>
+                <input type="email"  class="input-control" placeholder="email">
+            </div>
+            <div class="input-item ">
+                <i class="far fa-lock-alt icon"></i>
+                <input type="password"  class="input-control" placeholder="password">
+            </div>
+            <div class="input-item ">
+                <i class="far fa-lock-alt icon"></i>
+                <input type="password"  class="input-control" placeholder="re-password">
+            </div>
+            <a href="" class="button-form">
+                Register
+            </a>
+        </form>
+    </div>
+</div>
 <!-- ANCHOR header -->
 <div class="header">
     <div class="header-text">
@@ -64,7 +94,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 header-authentication">
-                    <span class="register pr-4">Register</span>
+                    <span class="register pr-4 item-click" data-show="register">Register</span>
                     <span class="login item-click" data-show="login">Login</span>
                     <span class="icon-cart">
                         <div class="info badge badge-light">4</div>
@@ -163,7 +193,6 @@
     })
     //ANCHOR login-register
     let nut = document.querySelectorAll('.item-click');
-    let content = document.querySelectorAll('.box-show');
     let btn_cancel = document.querySelectorAll('.btn-cancel');
     let layer_black = document.querySelector('.layer-black');
     for (let i = 0; i < nut.length; i++) {
