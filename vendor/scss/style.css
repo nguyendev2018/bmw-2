@@ -1583,7 +1583,7 @@ video {
   border: 1px solid #777777;
 }
 
-input {
+input[type=search] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
