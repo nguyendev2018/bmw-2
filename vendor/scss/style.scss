@@ -335,17 +335,21 @@ input[type=text] {
       grid-gap: 20px;
       .box{
         &-item{
-         display: flex;
+          display: grid;
+          grid-template-columns: 1fr 3fr;
+          grid-gap: 10px;
         }
         &-img{
-          background-image: url(../../images/product-item/1.jpg);
-          background-size:cover ;
-          background-repeat:no-repeat ;
-          width: 100px;
           height: 67px;
           position: relative;
-          margin-right: 20px;
           cursor: pointer;
+          &--buy{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
          .layer-black{
             position: absolute;
           }
@@ -353,9 +357,7 @@ input[type=text] {
             opacity: 1;
             visibility: visible;
           }
-          &--buy{
-
-          }
+       
         }
         
         &-content{
