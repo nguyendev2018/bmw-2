@@ -1626,6 +1626,64 @@ input[type=text] {
   margin-right: 0;
 }
 
+.product-details--item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.product-details--item .box-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product-details--item .box-img {
+  background-image: url(../../images/product-item/1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 67px;
+  position: relative;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.product-details--item .box-img .layer-black {
+  position: absolute;
+}
+
+.product-details--item .box-img:hover .layer-black {
+  opacity: 1;
+  visibility: visible;
+}
+
+.product-details--item .box-content--top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px dashed gray;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.product-details--item .box-content--name {
+  font-size: 13px;
+}
+
+.product-details--item .box-content--number {
+  font-size: 13px;
+}
+
+.product-details--item .box-content--text {
+  font-size: 12px;
+}
+
 .slide-limit {
   background: url("../../images/slide anh/1_fix.jpg");
   background-size: cover;

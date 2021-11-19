@@ -329,6 +329,55 @@ input[type=text] {
       }
       color: white;
     }
+    &--item{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 20px;
+      .box{
+        &-item{
+         display: flex;
+        }
+        &-img{
+          background-image: url(../../images/product-item/1.jpg);
+          background-size:cover ;
+          background-repeat:no-repeat ;
+          width: 100px;
+          height: 67px;
+          position: relative;
+          margin-right: 20px;
+          cursor: pointer;
+         .layer-black{
+            position: absolute;
+          }
+          &:hover .layer-black{
+            opacity: 1;
+            visibility: visible;
+          }
+          &--buy{
+
+          }
+        }
+        
+        &-content{
+          &--top{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dashed gray;
+          padding-bottom: 5px;
+          margin-bottom: 5px;
+          }
+          &--name{
+            font-size: 13px;
+          }
+        &--number{
+          font-size: 13px;
+        }
+          &--text{
+            font-size: 12px;
+          }
+        }
+      }
+    }
   }
 }
 //ANCHOR slide-limit
