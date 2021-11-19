@@ -340,9 +340,9 @@ input[type=text] {
           grid-gap: 10px;
         }
         &-img{
-          height: 67px;
-          position: relative;
+          height: 50px;
           cursor: pointer;
+          position: relative;
           &--buy{
             position: absolute;
             top: 0;
@@ -350,13 +350,14 @@ input[type=text] {
             width: 100%;
             height: 100%;
           }
-         .layer-black{
-            position: absolute;
-          }
           &:hover .layer-black{
             opacity: 1;
             visibility: visible;
           }
+         .layer-black{
+            position: absolute;
+          }
+        
        
         }
         

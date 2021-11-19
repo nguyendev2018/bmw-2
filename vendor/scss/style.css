@@ -1643,9 +1643,9 @@ input[type=text] {
 }
 
 .product-details--item .box-img {
-  height: 67px;
-  position: relative;
+  height: 50px;
   cursor: pointer;
+  position: relative;
 }
 
 .product-details--item .box-img--buy {
@@ -1656,13 +1656,13 @@ input[type=text] {
   height: 100%;
 }
 
-.product-details--item .box-img .layer-black {
-  position: absolute;
-}
-
 .product-details--item .box-img:hover .layer-black {
   opacity: 1;
   visibility: visible;
+}
+
+.product-details--item .box-img .layer-black {
+  position: absolute;
 }
 
 .product-details--item .box-content--top {
