@@ -11,3 +11,11 @@ bg.onclick = function(){
     video.classList.remove("show");
     bg.classList.remove('show');
 } 
+// filter
+const filter_buttons = document.querySelectorAll('.product-details--item .box-item');
+const filter_box = document.querySelectorAll('.product-details .product-details--list');
+// Array.from(filter_buttons).forEach(filter_button => 
+//     filter_button.addEventListener("click",function(){
+//         console.log("nguyen");
+//     })
+//     )
