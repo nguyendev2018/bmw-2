@@ -1618,7 +1618,7 @@ input[type=text] {
   color: white;
 }
 
-.product-details--list:hover {
+.product-details--list.active, .product-details--list:hover {
   color: #feb518;
 }
 
