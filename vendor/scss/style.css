@@ -1409,6 +1409,45 @@ a.forgot:hover {
   color: white;
 }
 
+.button-click {
+  background: gray;
+  width: 100px;
+  height: 40px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 13px;
+  color: white;
+}
+
+.button-click:hover {
+  background: #feb518;
+}
+
+.about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 2fr;
+      grid-template-columns: 3fr 2fr;
+}
+
+.about-contact h2 {
+  text-transform: uppercase;
+}
+
+.about-contact--img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
 .bg-clip {
   position: fixed;
   top: 0;

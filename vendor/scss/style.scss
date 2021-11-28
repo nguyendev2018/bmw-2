@@ -145,7 +145,35 @@ display: block !important;
     }
   }
 }
-
+.button-click{
+  background: gray;
+  width: 100px;
+  height: 40px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: white;
+  &:hover{
+    background: $yellow_bold;
+  }
+}
+//ANCHOR about-us
+.about{
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  &-contact{
+    h2{
+      text-transform: uppercase;
+    }
+    &--img{
+      width: 80px;
+      height: 80px;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+  }
+}
 //ANCHOR everything
 .bg-clip {
   position: fixed;
