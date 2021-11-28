@@ -179,21 +179,39 @@ display: block !important;
   background-repeat:no-repeat ;
   &-container{
     display: grid;
-    grid-template-columns: 4fr 2fr;
+    grid-template-columns: 1.5fr 2fr;
   }
   &-contact{
     &--box{
-      display: grid;
-      grid-template-columns: 2fr 3fr;
+     display: flex;
+    }
+    &--text{
+      margin-left: 40px;
+      &>h3{
+        color: $yellow_bold;
+        text-transform: uppercase;
+        font-size: 18px;
+      }
+      p{
+        font-size: 20px !important;
+        font-weight: bold;
+      }
     }
     h2{
       text-transform: uppercase;
     }
     &--img{
+      &>img{
+      
+      }
       width: 80px;
       height: 80px;
-      border-radius: 50px;
       cursor: pointer;
+      border-radius: 999px;
+      box-shadow: 1px 2px 5px 0 #0000004d;
+      display: block;
+      overflow: hidden;
+   
     }
   }
 }
@@ -620,6 +638,15 @@ input[type=text] {
       margin-top: 30px;
     }
   }
+  .about{
+    &-container{
+      grid-template-columns: repeat(1,1fr);
+    }
+    &-img{
+      order: -1;
+    }
+  }
+
 }
 
 //ANCHOR 768

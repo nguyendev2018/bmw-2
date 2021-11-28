@@ -1456,15 +1456,29 @@ a.forgot:hover {
 .about-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 4fr 2fr;
-      grid-template-columns: 4fr 2fr;
+  -ms-grid-columns: 1.5fr 2fr;
+      grid-template-columns: 1.5fr 2fr;
 }
 
 .about-contact--box {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 3fr;
-      grid-template-columns: 2fr 3fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-contact--text {
+  margin-left: 40px;
+}
+
+.about-contact--text > h3 {
+  color: #feb518;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.about-contact--text p {
+  font-size: 20px !important;
+  font-weight: bold;
 }
 
 .about-contact h2 {
@@ -1474,8 +1488,12 @@ a.forgot:hover {
 .about-contact--img {
   width: 80px;
   height: 80px;
-  border-radius: 50px;
   cursor: pointer;
+  border-radius: 999px;
+  -webkit-box-shadow: 1px 2px 5px 0 #0000004d;
+          box-shadow: 1px 2px 5px 0 #0000004d;
+  display: block;
+  overflow: hidden;
 }
 
 .bg-clip {
@@ -1939,6 +1957,15 @@ input[type=text] {
   }
   .footer-top .open-hour {
     margin-top: 30px;
+  }
+  .about-container {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .about-img {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
 }
 
