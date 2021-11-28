@@ -1410,7 +1410,7 @@ a.forgot:hover {
 }
 
 .button-click {
-  background: gray;
+  background: #feb518;
   width: 100px;
   height: 40px;
   display: -webkit-box !important;
@@ -1424,17 +1424,47 @@ a.forgot:hover {
           justify-content: center;
   font-size: 13px;
   color: white;
+  position: relative;
 }
 
-.button-click:hover {
-  background: #feb518;
+.button-click::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0;
+  background: white;
+  -webkit-transform: skewX(25deg);
+          transform: skewX(25deg);
+  -webkit-transition: all .5s ease 0s;
+  transition: all .5s ease 0s;
+  opacity: .1;
+}
+
+.button-click:hover::after {
+  left: 5%;
+  width: 90%;
 }
 
 .about {
+  background-image: url(../../images/about/about-us.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 3fr 2fr;
-      grid-template-columns: 3fr 2fr;
+  -ms-grid-columns: 4fr 2fr;
+      grid-template-columns: 4fr 2fr;
+}
+
+.about-contact--box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 3fr;
+      grid-template-columns: 2fr 3fr;
 }
 
 .about-contact h2 {

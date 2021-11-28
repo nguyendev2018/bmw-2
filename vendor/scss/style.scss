@@ -146,7 +146,7 @@ display: block !important;
   }
 }
 .button-click{
-  background: gray;
+  background: $yellow_bold;
   width: 100px;
   height: 40px;
   display: flex !important;
@@ -154,15 +154,38 @@ display: block !important;
   justify-content: center;
   font-size: 13px;
   color: white;
-  &:hover{
-    background: $yellow_bold;
+  position: relative;
+  &::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width:0;
+    background: white;
+    transform: skewX(25deg);
+    transition: all .5s ease 0s;
+    opacity: .1;
+  }
+  &:hover::after{
+    left: 5%;
+    width: 90%;
   }
 }
 //ANCHOR about-us
 .about{
-  display: grid;
-  grid-template-columns: 3fr 2fr;
+  background-image: url(../../images/about/about-us.jpg);
+  background-size:cover ;
+  background-repeat:no-repeat ;
+  &-container{
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+  }
   &-contact{
+    &--box{
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+    }
     h2{
       text-transform: uppercase;
     }
