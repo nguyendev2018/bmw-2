@@ -9,6 +9,10 @@ body {
   font-weight: 400;
 }
 
+input {
+  outline: none;
+}
+
 ul {
   margin: 0;
   list-style: none;
@@ -169,7 +173,6 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,7 +201,7 @@ p {
   color: white;
 }
 
-.header-menu-list__item {
+.header-menu--list_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -207,11 +210,35 @@ p {
           align-items: center;
 }
 
-.header-menu-list__item li {
+.header-menu--list_item > li {
   list-style: none;
+  padding-top: 34px;
+  padding-bottom: 34px;
+  position: relative;
 }
 
-.header-menu-list__item li a {
+.header-menu--list_item > li:hover {
+  color: black;
+}
+
+.header-menu--list_item > li .dropdown {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  width: 150px;
+  background: #3e4342;
+  top: 100%;
+}
+
+.header-menu--list_item > li .dropdown li {
+  line-height: 40px;
+}
+
+.header-menu--list_item > li .dropdown li a {
+  padding-left: 30px;
+}
+
+.header-menu--list_item > li a {
   font-size: 17px;
   padding-right: 30px;
   color: #777777;
@@ -219,23 +246,27 @@ p {
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
 }
 
-.header-menu-list__item li a:hover {
+.header-menu--list_item > li a .icon {
+  font-size: 10px;
+}
+
+.header-menu--list_item > li a:hover {
   color: #feb518 !important;
 }
 
-.header-menu-list__item li.box-car {
+.header-menu--list_item > li.box-car {
   border: 2px solid #feb518;
   background: #feb518;
   padding: 5px 16px;
   text-align: center;
 }
 
-.header-menu-list__item li.box-car:hover {
+.header-menu--list_item > li.box-car:hover {
   border: 2px solid #feb518;
   background: white;
 }
 
-.header-menu-list__item li.box-car a {
+.header-menu--list_item > li.box-car a {
   padding-right: 0;
   color: black;
 }
@@ -1295,8 +1326,8 @@ a.forgot:hover {
   z-index: 8;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .layer-black.active {
@@ -1437,9 +1468,9 @@ a.forgot:hover {
   background: white;
   -webkit-transform: skewX(25deg);
           transform: skewX(25deg);
-  -webkit-transition: all .5s ease 0s;
-  transition: all .5s ease 0s;
-  opacity: .1;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  opacity: 0.1;
 }
 
 .button-click:hover::after {
@@ -1528,8 +1559,8 @@ video {
   -webkit-box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
   outline: none;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .video-clip {
@@ -1551,8 +1582,8 @@ video {
           justify-content: center;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .video-clip.show {
@@ -1640,7 +1671,7 @@ video {
 
 .founder .number {
   font-size: 25px;
-  font-family: 'Oswald', sans-seri;
+  font-family: "Oswald", sans-seri;
   color: #333333;
   font-weight: bold;
 }
@@ -1668,12 +1699,6 @@ video {
 .founder .table-list--item {
   padding: 10px 20px;
   border: 1px solid #777777;
-}
-
-input[type=text] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
 }
 
 .product-banner {
@@ -1836,7 +1861,7 @@ input[type=text] {
 }
 
 .comments-carousel .quote {
-  font-family: ""Roboto Slab ", serif";
+  font-family: "" Roboto Slab ", serif";
   line-height: 36px;
   font-size: 18px;
 }
@@ -1993,7 +2018,8 @@ input[type=text] {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
-  .founder .table-list, .product-details--item {
+  .founder .table-list,
+  .product-details--item {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
@@ -2020,7 +2046,8 @@ input[type=text] {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
-  .founder .table-list, .product-details--item {
+  .founder .table-list,
+  .product-details--item {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }

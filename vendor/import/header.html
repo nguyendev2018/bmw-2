@@ -36,9 +36,9 @@
                 </ul>
                 <a href="" class="text-form">Sign up!</a>
                 <span>Not a number yet? </span>
-    
+
             </div>
-        
+
         </form>
     </div>
 </div>
@@ -52,19 +52,19 @@
         <form action="">
             <div class="input-item">
                 <i class="fas fa-user icon"></i>
-                <input type="text"  class="input-control" placeholder="username">
+                <input type="text" class="input-control" placeholder="username">
             </div>
             <div class="input-item">
                 <i class="fas fa-user icon"></i>
-                <input type="email"  class="input-control" placeholder="email">
+                <input type="email" class="input-control" placeholder="email">
             </div>
             <div class="input-item ">
                 <i class="far fa-lock-alt icon"></i>
-                <input type="password"  class="input-control" placeholder="password">
+                <input type="password" class="input-control" placeholder="password">
             </div>
             <div class="input-item ">
                 <i class="far fa-lock-alt icon"></i>
-                <input type="password"  class="input-control" placeholder="re-password">
+                <input type="password" class="input-control" placeholder="re-password">
             </div>
             <a href="" class="button-form">
                 Register
@@ -115,14 +115,28 @@
             <div class=" header-left button">
                 <span class="line fal fa-bars "></span>
             </div>
-            <div class="header-menu-list">
-                <ul class="header-menu-list__item">
-                    <li> <a href=""> Home </a></li>
-                    <li> <a href=""> About </a></li>
-                    <li> <a href=""> Car </a></li>
-                    <li> <a href=""> Shop </a></li>
-                    <li> <a href=""> Gallery </a></li>
-                    <li> <a href=""> Blog </a></li>
+            <div class="header-menu--list">
+                <ul class="header-menu--list_item">
+                    <li>
+                        <a href=""> Home <i class="fal icon fa-chevron-down"></i> </a>
+                        <ul class="dropdown">
+                            <li>
+                                <a href="">
+                                    Home 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Home 2
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li> <a href=""> About <i class="fal icon fa-chevron-down"></i> </a></li>
+                    <li> <a href=""> Car <i class="fal icon fa-chevron-down"></i> </a></li>
+                    <li> <a href=""> Shop <i class="fal icon fa-chevron-down"></i> </a></li>
+                    <li> <a href=""> Gallery <i class="fal icon fa-chevron-down"></i> </a></li>
+                    <li> <a href=""> Blog <i class="fal icon fa-chevron-down"></i> </a></li>
                     <li class="box-car"> <a href="">Reservation</a></li>
                 </ul>
             </div>
@@ -201,10 +215,10 @@
             var current_show = document.getElementById(content_show);
             current_show.classList.toggle("active");
             layer_black.classList.add("active");
-           current_show.querySelector(".btn-cancel").onclick = function(){
-            current_show.classList.remove("active");
-            layer_black.classList.remove("active");
-           }
+            current_show.querySelector(".btn-cancel").onclick = function () {
+                current_show.classList.remove("active");
+                layer_black.classList.remove("active");
+            }
         });
     }
 </script>

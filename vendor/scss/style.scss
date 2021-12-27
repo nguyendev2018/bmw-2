@@ -21,7 +21,7 @@
 .logo {
   width: 90px;
 }
-.layer-black{
+.layer-black {
   position: fixed;
   top: 0;
   left: 0;
@@ -31,21 +31,21 @@
   z-index: 8;
   opacity: 0;
   visibility: hidden;
-  transition: all .4s;
-  &.active{
+  transition: all 0.4s;
+  &.active {
     opacity: 1;
     visibility: visible;
   }
 }
-//ANCHOR banner 
+//ANCHOR banner
 .banner {
   position: relative;
-  &-black{
+  &-black {
     position: absolute;
     z-index: 1;
     width: 100%;
     height: 100%;
-    background:#0000002b ;
+    background: #0000002b;
   }
   .click-slide {
     width: 40px;
@@ -59,10 +59,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    &:hover{
+    &:hover {
       background: #939ba19e;
     }
-    &>svg {
+    & > svg {
       font-size: 20px;
       color: $black1;
     }
@@ -85,29 +85,23 @@
       background-size: cover;
       background-repeat: no-repeat;
       height: calc(100vh - 150px);
-display: block !important;
+      display: block !important;
       background-position: center center;
-
     }
 
     &--item.item-1 {
       background-image: url("../../images/banner/bmw1.jpg");
-
     }
 
     &--item.item-2 {
       background-image: url("../../images/banner/bmw2.jpg");
-
     }
 
     &--item.item-3 {
       background-image: url("../../images/banner/bmw3.png");
-
     }
   }
 }
-
-
 
 //ANCHOR ceo
 .ceo {
@@ -145,7 +139,7 @@ display: block !important;
     }
   }
 }
-.button-click{
+.button-click {
   background: $yellow_bold;
   width: 100px;
   height: 40px;
@@ -155,54 +149,53 @@ display: block !important;
   font-size: 13px;
   color: white;
   position: relative;
-  &::after{
+  &::after {
     content: "";
     position: absolute;
     height: 100%;
     left: 0;
     top: 0;
-    width:0;
+    width: 0;
     background: white;
     transform: skewX(25deg);
-    transition: all .5s ease 0s;
-    opacity: .1;
+    transition: all 0.5s ease 0s;
+    opacity: 0.1;
   }
-  &:hover::after{
+  &:hover::after {
     left: 5%;
     width: 90%;
   }
 }
 //ANCHOR about-us
-.about{
+.about {
   background-image: url(../../images/about/about-us.jpg);
-  background-size:cover ;
-  background-repeat:no-repeat ;
-  &-container{
+  background-size: cover;
+  background-repeat: no-repeat;
+  &-container {
     display: grid;
     grid-template-columns: 1.5fr 2fr;
   }
-  &-contact{
-    &--box{
-     display: flex;
+  &-contact {
+    &--box {
+      display: flex;
     }
-    &--text{
+    &--text {
       margin-left: 40px;
-      &>h3{
+      & > h3 {
         color: $yellow_bold;
         text-transform: uppercase;
         font-size: 18px;
       }
-      p{
+      p {
         font-size: 20px !important;
         font-weight: bold;
       }
     }
-    h2{
+    h2 {
       text-transform: uppercase;
     }
-    &--img{
-      &>img{
-      
+    &--img {
+      & > img {
       }
       width: 80px;
       height: 80px;
@@ -211,7 +204,6 @@ display: block !important;
       box-shadow: 1px 2px 5px 0 #0000004d;
       display: block;
       overflow: hidden;
-   
     }
   }
 }
@@ -241,7 +233,7 @@ video {
   max-width: 800px;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
   outline: none;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .video-clip {
@@ -257,7 +249,7 @@ video {
   justify-content: center;
   opacity: 0;
   visibility: hidden;
-  transition: all .3s;
+  transition: all 0.3s;
 
   &.show {
     opacity: 1;
@@ -295,12 +287,12 @@ video {
             display: flex !important;
             align-items: center;
             justify-content: center;
-            box-shadow:10px 0px 50px 3px #00000052;
+            box-shadow: 10px 0px 50px 3px #00000052;
 
             .icon-play {
               color: #feb518;
               font-size: 24px;
-              transition: cubic-bezier(0.075, 0.82, 0.165, 1) .3s;
+              transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
             }
           }
         }
@@ -333,7 +325,6 @@ video {
 
 //ANCHOR founder
 .founder {
-
   color: #000;
 
   p {
@@ -342,12 +333,12 @@ video {
 
   .number {
     font-size: 25px;
-    font-family: 'Oswald', sans-seri;
+    font-family: "Oswald", sans-seri;
     color: #333333;
     font-weight: bold;
   }
 
-  &>.border-top {
+  & > .border-top {
     border-top: 1px solid #777777;
     width: 70%;
     margin: 0 auto;
@@ -370,83 +361,80 @@ video {
     }
   }
 }
-input[type=text] {
-  appearance: none;
-}
+
 //ANCHOR product-details
-.product{
-  &-banner{
+.product {
+  &-banner {
     background: url("../../images/product-details/banner.jpg");
-  background-size: cover;
-  background-position: 100% 66%;
-  height: 500px;
-   display: flex;
-      align-items: flex-end;
-      justify-content:center ;
+    background-size: cover;
+    background-position: 100% 66%;
+    height: 500px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
   }
-  &-details{
-   display: flex;
-   padding-bottom: 30px;
-    &--list{
+  &-details {
+    display: flex;
+    padding-bottom: 30px;
+    &--list {
       margin-right: 20px;
       cursor: pointer;
       font-size: 13px;
-      &.active,&:hover{
+      &.active,
+      &:hover {
         color: $yellow_bold;
       }
-     
-      &:last-child{
+
+      &:last-child {
         margin-right: 0;
       }
       color: white;
     }
-    &--item{
+    &--item {
       display: grid;
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(3, 1fr);
       grid-gap: 20px;
-      .box{
-        &-item{
+      .box {
+        &-item {
           display: grid;
           grid-template-columns: 1fr 3fr;
           grid-gap: 10px;
         }
-        &-img{
+        &-img {
           height: 50px;
           cursor: pointer;
           position: relative;
-          &--buy{
+          &--buy {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
           }
-          &:hover .layer-black{
+          &:hover .layer-black {
             opacity: 1;
             visibility: visible;
           }
-         .layer-black{
+          .layer-black {
             position: absolute;
           }
-        
-       
         }
-        
-        &-content{
-          &--top{
+
+        &-content {
+          &--top {
             display: flex;
             justify-content: space-between;
             border-bottom: 1px dashed gray;
-          padding-bottom: 5px;
-          margin-bottom: 5px;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
           }
-          &--name{
+          &--name {
             font-size: 13px;
           }
-        &--number{
-          font-size: 13px;
-        }
-          &--text{
+          &--number {
+            font-size: 13px;
+          }
+          &--text {
             font-size: 12px;
           }
         }
@@ -491,7 +479,7 @@ input[type=text] {
     right: 0;
     color: black;
     line-height: 34px;
-    &:hover>svg{
+    &:hover > svg {
       color: $yellow_bold;
     }
   }
@@ -515,7 +503,7 @@ input[type=text] {
     }
 
     .quote {
-      font-family: ""Roboto Slab ", serif";
+      font-family: "" Roboto Slab ", serif";
       line-height: 36px;
       font-size: 18px;
     }
@@ -582,9 +570,7 @@ input[type=text] {
     margin-left: 15px;
     margin-right: 15px;
   }
-
 }
-
 
 .cricle-fixed {
   width: 40px;
@@ -606,26 +592,24 @@ input[type=text] {
     opacity: 1;
   }
 }
-//ANCHOR 1200 
+//ANCHOR 1200
 @media screen and(max-width:1200px) {
-  .general-body{
+  .general-body {
     grid-template-columns: 1fr;
     width: 300px;
-    &--left{
+    &--left {
       display: none;
     }
-    &--right{
+    &--right {
       padding-right: 20px;
       padding-left: 20px;
       padding-bottom: 20px;
     }
-    .form-bottom{
+    .form-bottom {
       display: none;
     }
   }
 }
-
-
 
 //ANCHOR 992
 @media screen and (max-width: 992px) {
@@ -638,15 +622,14 @@ input[type=text] {
       margin-top: 30px;
     }
   }
-  .about{
-    &-container{
-      grid-template-columns: repeat(1,1fr);
+  .about {
+    &-container {
+      grid-template-columns: repeat(1, 1fr);
     }
-    &-img{
+    &-img {
       order: -1;
     }
   }
-
 }
 
 //ANCHOR 768
@@ -683,21 +666,20 @@ input[type=text] {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .founder .table-list,.product-details--item {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-  
+  .founder .table-list,
+  .product-details--item {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   .everything {
     &-list {
       &--item {
-        &>h2 {
+        & > h2 {
           font-size: 20px;
           line-height: 40px;
         }
 
-        &>p {
+        & > p {
           font-size: 28px;
         }
       }
@@ -707,7 +689,6 @@ input[type=text] {
 
 //ANCHOR 576
 @media screen and (max-width: 576px) {
-
   .footer-top {
     .user-link {
       margin-top: 30px;
@@ -728,10 +709,9 @@ input[type=text] {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .founder .table-list,.product-details--item {
-  
-      grid-template-columns: repeat(1, 1fr);
-    
+  .founder .table-list,
+  .product-details--item {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .everything {
@@ -755,15 +735,14 @@ input[type=text] {
       }
     }
   }
-
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width: 400px) {
   .header-left--desktop__call {
     font-size: 12px;
   }
-  .product-details{
-    &--list{
+  .product-details {
+    &--list {
       font-size: 12px;
     }
   }
