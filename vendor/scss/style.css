@@ -168,8 +168,8 @@ p {
 }
 
 .header-menu {
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   top: 0;
   left: 0;
   width: 100%;
@@ -194,7 +194,9 @@ p {
 .header-menu.fix-top {
   position: fixed;
   background: #3c3a3a;
-  border-bottom: 2px  solid #5f5c5c;
+  border-bottom: 2px solid #5f5c5c;
+  -webkit-animation: scroll 0.4s;
+          animation: scroll 0.4s;
 }
 
 .header-menu.fix-top .header-menu-list__item li a {
@@ -376,6 +378,28 @@ p {
 
 .header-mobile--list li ul.sub-menu {
   display: none;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
 }
 
 .footer-top {
@@ -1194,13 +1218,10 @@ p {
 
 .general-body--right .input-item input {
   padding: 9px 10px;
+  padding-left: 42px;
   border-radius: 30px;
-  border-color: #feb518;
+  border: 1px solid #feb518;
   width: 100%;
-}
-
-.general-body--right .input-item input::-webkit-input-placeholder {
-  padding-left: 25px;
 }
 
 .general-body--right .input-item .icon {
