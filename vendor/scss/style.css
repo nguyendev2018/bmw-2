@@ -235,6 +235,15 @@ p {
   visibility: hidden;
 }
 
+.header-menu--list_item .box-close {
+  width: 80%;
+  text-align: right;
+}
+
+.header-menu--list_item .box-close--icon {
+  color: white;
+}
+
 .header-menu--list_item > li {
   list-style: none;
   padding-top: 34px;
@@ -2079,6 +2088,7 @@ video {
     height: 100%;
     background: #222222;
     z-index: 99;
+    padding-top: 20px;
   }
   .header-menu--list_item > li {
     padding-top: 15px;

@@ -111,6 +111,13 @@
                     }
                 }
             }
+            .box-close {
+                width: 80%;
+                text-align: right;
+                &--icon {
+                    color: white;
+                }
+            }
             &>li {
                 list-style: none;
                 padding-top: 34px;
