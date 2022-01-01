@@ -604,8 +604,19 @@ video {
                     z-index: 99;
                     padding-top: 20px;
                     &>li {
+                        width: 100%;
+                        text-align: center;
                         padding-top: 15px;
                         padding-bottom: 15px;
+                        border-bottom: 1px dashed #252826;
+                        a {
+                            padding-right: 0;
+                        }
+                        .box-icon {
+                            width: 20px;
+                            height: 20px;
+                            background: black;
+                        }
                     }
                 }
             }

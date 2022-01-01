@@ -2091,8 +2091,19 @@ video {
     padding-top: 20px;
   }
   .header-menu--list_item > li {
+    width: 100%;
+    text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
+    border-bottom: 1px dashed #252826;
+  }
+  .header-menu--list_item > li a {
+    padding-right: 0;
+  }
+  .header-menu--list_item > li .box-icon {
+    width: 20px;
+    height: 20px;
+    background: black;
   }
 }
 
