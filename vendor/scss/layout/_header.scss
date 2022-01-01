@@ -89,6 +89,13 @@
         &_item {
             display: flex;
             align-items: center;
+            .item-dropdown {
+                .icon {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
             &>li {
                 list-style: none;
                 padding-top: 34px;
@@ -117,7 +124,7 @@
                             padding-left: 30px;
                         }
                         .dropdown-second {
-                            right: -100%;
+                            left: 100%;
                             top: 0;
                         }
                         &:hover .dropdown-second {

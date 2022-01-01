@@ -212,6 +212,12 @@ p {
           align-items: center;
 }
 
+.header-menu--list_item .item-dropdown .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .header-menu--list_item > li {
   list-style: none;
   padding-top: 34px;
@@ -250,7 +256,7 @@ p {
 }
 
 .header-menu--list_item > li .dropdown li.dropdown-hover .dropdown-second {
-  right: -100%;
+  left: 100%;
   top: 0;
 }
 
