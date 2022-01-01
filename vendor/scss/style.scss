@@ -589,11 +589,12 @@ video {
     }
     .header {
         &-left.button {
-            display: block;
+            display: flex;
         }
         &-menu {
             &--list {
                 &_item {
+                    display: none;
                     flex-direction: column;
                     position: fixed;
                     top: 0;
@@ -603,6 +604,8 @@ video {
                     background: #222222;
                     z-index: 99;
                     padding-top: 20px;
+                    overflow: hidden;
+                    overflow-y: scroll;
                     &>li {
                         width: 100%;
                         text-align: center;
@@ -617,11 +620,17 @@ video {
                             height: 32px;
                             border: 1px solid #726e6e;
                         }
+                        .dropdown {
+                            width: 100%;
+                        }
                     }
                     .item-dropdown {
                         .box-icon {
-                            right: 0;
-                            transform: translate(-41%, 0%);
+                            transform: translateY(-50%);
+                            right: 20px;
+                        }
+                        .icon {
+                            color: white;
                         }
                     }
                 }
