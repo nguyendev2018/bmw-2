@@ -90,11 +90,17 @@
             display: flex;
             align-items: center;
             .item-dropdown {
-                .icon {
+                .box-icon {
                     position: absolute;
                     top: 50%;
                     right: 15%;
                     transform: translate(-41%, -50%);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .icon {
+                    position: absolute;
                     &-down {
                         opacity: 0;
                         visibility: hidden;

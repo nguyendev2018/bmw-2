@@ -613,9 +613,15 @@ video {
                             padding-right: 0;
                         }
                         .box-icon {
-                            width: 20px;
-                            height: 20px;
-                            background: black;
+                            width: 36px;
+                            height: 32px;
+                            border: 1px solid #726e6e;
+                        }
+                    }
+                    .item-dropdown {
+                        .box-icon {
+                            right: 0;
+                            transform: translate(-41%, 0%);
                         }
                     }
                 }
