@@ -92,8 +92,23 @@
             .item-dropdown {
                 .icon {
                     position: absolute;
-                    top: 0;
-                    left: 0;
+                    top: 50%;
+                    right: 15%;
+                    transform: translate(-41%, -50%);
+                    &-down {
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+                }
+                &:hover .icon {
+                    &-down {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                    &-up {
+                        opacity: 0;
+                        visibility: hidden;
+                    }
                 }
             }
             &>li {
@@ -121,7 +136,7 @@
                         line-height: 40px;
                         position: relative;
                         a {
-                            padding-left: 30px;
+                            padding-left: 45px;
                         }
                         .dropdown-second {
                             left: 100%;
