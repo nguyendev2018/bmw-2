@@ -99,6 +99,11 @@
 
 //ANCHOR ceo
 .ceo {
+    &-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 50px;
+    }
     &-info {
         font-size: 30px;
         color: #333;
@@ -111,15 +116,17 @@
         .details {
             line-height: 26px;
             color: #777;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
     }
     .social {
         &-icon {
             background: black;
-            width: 34px;
+            width: 30px;
             display: inline-block !important;
             text-align: center;
-            padding: 3px;
+            padding: 5px;
             line-height: 25px;
             color: gray;
             &:hover {
@@ -308,6 +315,7 @@ video {
 //ANCHOR founder
 .founder {
     color: #000;
+    text-align: center;
     p {
         color: #777777;
     }
@@ -571,12 +579,10 @@ video {
 
 //ANCHOR 992
 @media screen and (max-width: 992px) {
-    .footer-top {
-        .list-car {
-            margin-top: 30px;
-        }
-        .open-hour {
-            margin-top: 30px;
+    .footer {
+        &-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
         }
     }
     .about {
@@ -692,9 +698,10 @@ video {
 
 //ANCHOR 576
 @media screen and (max-width: 576px) {
-    .footer-top {
-        .user-link {
-            margin-top: 30px;
+    .footer {
+        &-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
         }
     }
     .header-left--desktop {
@@ -734,6 +741,7 @@ video {
     }
 }
 
+//ANCHOR 400
 @media screen and (max-width: 400px) {
     .header-left--desktop__call {
         font-size: 12px;

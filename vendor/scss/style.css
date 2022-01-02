@@ -1561,6 +1561,15 @@ a.forgot:hover {
   background-image: url("../../images/banner/bmw3.png");
 }
 
+.ceo-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+}
+
 .ceo-info {
   font-size: 30px;
   color: #333;
@@ -1576,14 +1585,16 @@ a.forgot:hover {
 .ceo-info .details {
   line-height: 26px;
   color: #777;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .ceo .social-icon {
   background: black;
-  width: 34px;
+  width: 30px;
   display: inline-block !important;
   text-align: center;
-  padding: 3px;
+  padding: 5px;
   line-height: 25px;
   color: gray;
 }
@@ -1815,6 +1826,7 @@ video {
 
 .founder {
   color: #000;
+  text-align: center;
 }
 
 .founder p {
@@ -2129,11 +2141,11 @@ video {
 }
 
 @media screen and (max-width: 992px) {
-  .footer-top .list-car {
-    margin-top: 30px;
-  }
-  .footer-top .open-hour {
-    margin-top: 30px;
+  .footer-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
   .about-container {
     -ms-grid-columns: (1fr)[1];
@@ -2237,8 +2249,11 @@ video {
 }
 
 @media screen and (max-width: 576px) {
-  .footer-top .user-link {
-    margin-top: 30px;
+  .footer-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
   .header-left--desktop .__call {
     font-size: 11px;
