@@ -93,11 +93,13 @@
                 .box-icon {
                     position: absolute;
                     top: 50%;
-                    right: 15%;
-                    transform: translate(-41%, -50%);
+                    right: 20px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    .icon {
+                        font-size: 10px;
+                    }
                 }
                 .icon {
                     position: absolute;
@@ -107,6 +109,7 @@
                     }
                 }
                 &:hover .icon {
+                    color: #feb518;
                     &-down {
                         opacity: 1;
                         visibility: visible;
@@ -132,6 +135,9 @@
                 position: relative;
                 &:hover {
                     color: black;
+                }
+                &:hover a {
+                    color: #feb518;
                 }
                 .dropdown,
                 .dropdown-second {
@@ -170,9 +176,6 @@
                     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
                     .icon {
                         font-size: 10px;
-                    }
-                    &:hover {
-                        color: #feb518 !important;
                     }
                 }
                 &.box-car {

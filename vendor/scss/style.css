@@ -220,9 +220,7 @@ p {
 .header-menu--list_item .item-dropdown .box-icon {
   position: absolute;
   top: 50%;
-  right: 15%;
-  -webkit-transform: translate(-41%, -50%);
-          transform: translate(-41%, -50%);
+  right: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -234,6 +232,10 @@ p {
           justify-content: center;
 }
 
+.header-menu--list_item .item-dropdown .box-icon .icon {
+  font-size: 10px;
+}
+
 .header-menu--list_item .item-dropdown .icon {
   position: absolute;
 }
@@ -241,6 +243,10 @@ p {
 .header-menu--list_item .item-dropdown .icon-down {
   opacity: 0;
   visibility: hidden;
+}
+
+.header-menu--list_item .item-dropdown:hover .icon {
+  color: #feb518;
 }
 
 .header-menu--list_item .item-dropdown:hover .icon-down {
@@ -272,6 +278,10 @@ p {
 
 .header-menu--list_item > li:hover {
   color: black;
+}
+
+.header-menu--list_item > li:hover a {
+  color: #feb518;
 }
 
 .header-menu--list_item > li .dropdown,
@@ -322,10 +332,6 @@ p {
 
 .header-menu--list_item > li a .icon {
   font-size: 10px;
-}
-
-.header-menu--list_item > li a:hover {
-  color: #feb518 !important;
 }
 
 .header-menu--list_item > li.box-car {
@@ -2138,9 +2144,8 @@ video {
     width: 100%;
   }
   .header-menu--list_item .item-dropdown .box-icon {
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    right: 20px;
+    -webkit-transform: translate(-41%, -50%);
+            transform: translate(-41%, -50%);
   }
   .header-menu--list_item .item-dropdown .icon {
     color: white;
