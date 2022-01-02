@@ -118,6 +118,7 @@
                 }
             }
             .box-close {
+                display: none;
                 width: 80%;
                 text-align: right;
                 &--icon {
@@ -147,6 +148,7 @@
                     li.dropdown-hover {
                         line-height: 40px;
                         position: relative;
+                        background: #222222;
                         a {
                             padding-left: 45px;
                         }
@@ -192,6 +194,10 @@
                     visibility: visible;
                     transform: translateY(0%);
                 }
+            }
+            .logo,
+            .authentication {
+                display: none !important;
             }
         }
     }
