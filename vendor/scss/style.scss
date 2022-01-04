@@ -425,12 +425,15 @@ video {
     }
 }
 
-//ANCHOR slide-limit
+//ANCHOR xe đặc biệt
 .slide-limit {
     background: url("../../images/slide anh/1_fix.jpg");
     background-size: cover;
     color: white;
     padding: 50px 0px;
+    &--container {
+        position: relative;
+    }
     h4 {
         font-size: 24px;
         padding: 10px 0;
@@ -448,21 +451,25 @@ video {
             }
         }
     }
-    a.control-right,
-    a.control-left {
+    .control-right,
+    .control-left {
         position: absolute;
         background: white;
         width: 34px;
         height: 34px;
-        top: -38px;
+        top: 0px;
         right: 0;
         color: black;
         line-height: 34px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         &:hover>svg {
             color: $yellow_bold;
         }
     }
-    a.control-right {
+    .control-right {
         right: 44px;
         left: auto;
     }

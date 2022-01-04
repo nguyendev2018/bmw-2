@@ -1982,6 +1982,10 @@ video {
   padding: 50px 0px;
 }
 
+.slide-limit--container {
+  position: relative;
+}
+
 .slide-limit h4 {
   font-size: 24px;
   padding: 10px 0;
@@ -2000,24 +2004,34 @@ video {
   line-height: 23px;
 }
 
-.slide-limit a.control-right,
-.slide-limit a.control-left {
+.slide-limit .control-right,
+.slide-limit .control-left {
   position: absolute;
   background: white;
   width: 34px;
   height: 34px;
-  top: -38px;
+  top: 0px;
   right: 0;
   color: black;
   line-height: 34px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.slide-limit a.control-right:hover > svg,
-.slide-limit a.control-left:hover > svg {
+.slide-limit .control-right:hover > svg,
+.slide-limit .control-left:hover > svg {
   color: #feb518;
 }
 
-.slide-limit a.control-right {
+.slide-limit .control-right {
   right: 44px;
   left: auto;
 }
