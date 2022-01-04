@@ -260,6 +260,12 @@ p {
           align-items: center;
 }
 
+.header-menu--list_item .item-first:hover > a,
+.header-menu--list_item .item-second:hover > a,
+.header-menu--list_item .item-third:hover > a {
+  color: #feb518;
+}
+
 .header-menu--list_item .item-dropdown .box-icon {
   position: absolute;
   top: 50%;
@@ -277,6 +283,7 @@ p {
 
 .header-menu--list_item .item-dropdown .box-icon .icon {
   font-size: 10px;
+  cursor: pointer;
 }
 
 .header-menu--list_item .item-dropdown .icon {
@@ -317,14 +324,6 @@ p {
   padding-top: 34px;
   padding-bottom: 34px;
   position: relative;
-}
-
-.header-menu--list_item > li:hover {
-  color: black;
-}
-
-.header-menu--list_item > li:hover a {
-  color: #feb518;
 }
 
 .header-menu--list_item > li .dropdown,

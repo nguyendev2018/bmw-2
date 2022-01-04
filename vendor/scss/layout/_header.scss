@@ -88,6 +88,13 @@
         &_item {
             display: flex;
             align-items: center;
+            .item-first,
+            .item-second,
+            .item-third {
+                &:hover>a {
+                    color: #feb518;
+                }
+            }
             .item-dropdown {
                 .box-icon {
                     position: absolute;
@@ -98,6 +105,7 @@
                     justify-content: center;
                     .icon {
                         font-size: 10px;
+                        cursor: pointer;
                     }
                 }
                 .icon {
@@ -132,12 +140,6 @@
                 padding-top: 34px;
                 padding-bottom: 34px;
                 position: relative;
-                &:hover {
-                    color: black;
-                }
-                &:hover a {
-                    color: #feb518;
-                }
                 .dropdown,
                 .dropdown-second {
                     opacity: 0;
