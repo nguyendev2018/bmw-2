@@ -1,6 +1,5 @@
 //ANCHOR header-top
 .header {
-    .logo {}
     &-authentication {
         text-align: right;
         span {
@@ -21,7 +20,7 @@
         color: white;
         display: flex;
         align-items: center;
-        height: 50px;
+        padding: 15px 0px;
     }
     &-left {
         &.button {
