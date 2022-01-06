@@ -128,8 +128,10 @@
                         </div>
                         <ul class="dropdown">
                             <li class="item-second dropdown-hover item-dropdown">
-                                <i class="fal icon icon-down fa-chevron-down"></i>
-                                <i class="fal icon icon-up fa-chevron-up"></i>
+                                <div class="box-icon">
+                                    <i class="fal icon icon-down fa-chevron-down"></i>
+                                    <i class="fal icon icon-up fa-chevron-up"></i>
+                                </div>
                                 <a href="">
                                     Home 1
                                 </a>
@@ -206,4 +208,21 @@
             }
         });
     }
+    //ANCHOR load header 
+    $(".item-first.item-dropdown").on("click", function(e) {
+        var element = $(this);
+        if (!element.hasClass("open")) {
+            element.addClass("open");
+            element.children("ul").slideDown(1000, "swing");
+            element.siblings("li").children("ul").slideUp(1000, "swing");
+            element.siblings("li").removeClass("open");
+            element.siblings("li").find("li").removeClass("open");
+            element.siblings("li").find("ul").slideUp(1000, "swing");
+
+        } else {
+            element.removeClass("open");
+            element.find("li").removeClass("open");
+            element.find("ul").slideUp(1000, "swing");
+        }
+    });
 </script>
