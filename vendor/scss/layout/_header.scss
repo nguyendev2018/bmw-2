@@ -88,6 +88,7 @@
         &_item {
             display: flex;
             align-items: center;
+            //hover
             .item-first,
             .item-second,
             .item-third {
@@ -96,6 +97,7 @@
                 }
             }
             .item-dropdown {
+                background: #222222;
                 .box-icon {
                     position: absolute;
                     top: 50%;
@@ -162,7 +164,6 @@
                 }
                 .dropdown {
                     line-height: 40px;
-                    position: relative;
                     li.dropdown-hover {
                         a {
                             padding-left: 45px;
@@ -201,90 +202,6 @@
             .logo,
             .authentication {
                 display: none !important;
-            }
-        }
-    }
-}
-
-//ANCHOR header-mobile
-.header-mobile {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 99;
-    background: #222222;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
-    transform: translateX(100%);
-    &.hide-bar {
-        transform: translateX(100%);
-    }
-    &.show-bar {
-        transform: translateX(0%);
-    }
-    &--close {
-        width: 40px;
-        height: 40px;
-        border-radius: 4px;
-        background: transparent;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
-        .icon {
-            font-size: 20px;
-            color: black;
-        }
-        &:hover {
-            .icon {
-                color: white;
-            }
-        }
-    }
-    &--list {
-        margin-top: 20px;
-        list-style: none;
-        li {
-            text-transform: uppercase;
-            position: relative;
-            .sub-menu {
-                &>li a {
-                    padding-left: 30px;
-                }
-            }
-            a {
-                color: white;
-                display: block;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                border-bottom: 1px solid gray;
-                padding-left: 20px;
-            }
-            &.active {
-                background: rgba(255, 255, 255, 0.1);
-            }
-            .box-button {
-                width: 34px;
-                height: 29px;
-                border: 2px solid white;
-                color: white;
-                position: absolute;
-                top: 6px;
-                right: 8px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                cursor: pointer;
-                .icon-chevron {
-                    &.active {
-                        background: black;
-                    }
-                }
-            }
-            ul.sub-menu {
-                display: none;
             }
         }
     }
