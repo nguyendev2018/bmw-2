@@ -326,6 +326,18 @@ p {
   position: relative;
 }
 
+.header-menu--list_item > li a {
+  font-size: 17px;
+  padding-right: 30px;
+  color: #777777;
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+}
+
+.header-menu--list_item > li a .icon {
+  font-size: 10px;
+}
+
 .header-menu--list_item > li .dropdown,
 .header-menu--list_item > li .dropdown-second {
   opacity: 0;
@@ -342,10 +354,9 @@ p {
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s;
 }
 
-.header-menu--list_item > li .dropdown li.dropdown-hover {
+.header-menu--list_item > li .dropdown {
   line-height: 40px;
   position: relative;
-  background: #222222;
 }
 
 .header-menu--list_item > li .dropdown li.dropdown-hover a {
@@ -362,19 +373,6 @@ p {
           transform: translateY(0px);
   opacity: 1;
   visibility: visible;
-}
-
-.header-menu--list_item > li a {
-  margin-bottom: 10px;
-  font-size: 17px;
-  padding-right: 30px;
-  color: #777777;
-  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
-}
-
-.header-menu--list_item > li a .icon {
-  font-size: 10px;
 }
 
 .header-menu--list_item > li.box-car {
@@ -2220,10 +2218,10 @@ video {
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
-    border-bottom: 1px dashed #252826;
   }
   .header-menu--list_item > li a {
     padding-right: 0;
+    padding-bottom: 10px;
   }
   .header-menu--list_item > li .box-icon {
     width: 36px;
@@ -2240,6 +2238,10 @@ video {
     position: sticky;
     display: none;
   }
+  .header-menu--list_item .item-dropdown {
+    background: #222222;
+    border-bottom: 1px dashed #20c256;
+  }
   .header-menu--list_item .item-dropdown .box-icon {
     top: 25px;
     -webkit-transform: translate(-41%, -50%);
@@ -2247,6 +2249,13 @@ video {
   }
   .header-menu--list_item .item-dropdown .icon {
     color: white;
+  }
+  .header-menu--list_item .dropdown-hover {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .header-menu--list_item .dropdown-hover:last-child {
+    padding-bottom: 0;
   }
   .header-menu--list_item .logo,
   .header-menu--list_item .authentication,

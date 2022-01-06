@@ -140,6 +140,15 @@
                 padding-top: 34px;
                 padding-bottom: 34px;
                 position: relative;
+                a {
+                    font-size: 17px;
+                    padding-right: 30px;
+                    color: #777777;
+                    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+                    .icon {
+                        font-size: 10px;
+                    }
+                }
                 .dropdown,
                 .dropdown-second {
                     opacity: 0;
@@ -152,10 +161,9 @@
                     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s;
                 }
                 .dropdown {
+                    line-height: 40px;
+                    position: relative;
                     li.dropdown-hover {
-                        line-height: 40px;
-                        position: relative;
-                        background: #222222;
                         a {
                             padding-left: 45px;
                         }
@@ -168,16 +176,6 @@
                             opacity: 1;
                             visibility: visible;
                         }
-                    }
-                }
-                a {
-                    margin-bottom: 10px;
-                    font-size: 17px;
-                    padding-right: 30px;
-                    color: #777777;
-                    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
-                    .icon {
-                        font-size: 10px;
                     }
                 }
                 &.box-car {

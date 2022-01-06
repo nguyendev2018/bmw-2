@@ -635,9 +635,9 @@ video {
                         text-align: center;
                         padding-top: 15px;
                         padding-bottom: 15px;
-                        border-bottom: 1px dashed #252826;
                         a {
                             padding-right: 0;
+                            padding-bottom: 10px;
                         }
                         .box-icon {
                             width: 36px;
@@ -653,12 +653,21 @@ video {
                         }
                     }
                     .item-dropdown {
+                        background: #222222;
+                        border-bottom: 1px dashed #20c256;
                         .box-icon {
                             top: 25px;
                             transform: translate(-41%, -50%);
                         }
                         .icon {
                             color: white;
+                        }
+                    }
+                    .dropdown-hover {
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        &:last-child {
+                            padding-bottom: 0;
                         }
                     }
                     .logo,
