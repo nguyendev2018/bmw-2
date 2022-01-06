@@ -97,7 +97,6 @@
                 }
             }
             .item-dropdown {
-                background: #222222;
                 .box-icon {
                     position: absolute;
                     top: 50%;
@@ -153,6 +152,7 @@
                 }
                 .dropdown,
                 .dropdown-second {
+                    background: #222222;
                     opacity: 0;
                     visibility: hidden;
                     position: absolute;

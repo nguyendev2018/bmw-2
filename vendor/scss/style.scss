@@ -640,8 +640,8 @@ video {
                             padding-bottom: 10px;
                         }
                         .box-icon {
-                            width: 36px;
-                            height: 32px;
+                            width: 34px;
+                            height: 30px;
                             border: 1px solid #726e6e;
                         }
                         .dropdown {
@@ -653,6 +653,7 @@ video {
                         }
                     }
                     .item-dropdown {
+                        background: #222222;
                         border-bottom: 1px dashed #20c256;
                         .box-icon {
                             top: 25px;
@@ -675,7 +676,10 @@ video {
                     .logo,
                     .authentication,
                     .box-close {
-                        display: block;
+                        display: block !important;
+                    }
+                    .logo {
+                        margin-bottom: 30px;
                     }
                 }
             }

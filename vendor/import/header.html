@@ -208,7 +208,7 @@
         });
     }
     //ANCHOR load header 
-    $(".item-first.item-dropdown").on("click", function(e) {
+    $(".item-first").on("click", function(e) {
         var element = $(this);
         if (!element.hasClass("open")) {
             element.addClass("open");
@@ -222,6 +222,26 @@
             element.removeClass("open");
             element.find("li").removeClass("open");
             element.find("ul").slideUp(1000, "swing");
+        }
+    });
+    $(".item-second").on("click", function(e) {
+        e.stopPropagation();
+        var element = $(this);
+        if (!element.parent().hasClass("open")) {
+            element.parent().addClass("open");
+            element.parent().children("ul").slideDown(300, "swing");
+            element
+                .parent()
+                .siblings(".dropdown-second")
+                .children("ul")
+                .slideUp(300, "swing");
+            element.parent().siblings(".dropdown-second").removeClass("open");
+            element.parent().siblings(".dropdown-second").find("li").removeClass("open");
+            element.parent().siblings(".dropdown-second").find("ul").slideUp(300, "swing");
+        } else {
+            element.parent().removeClass("open");
+            element.parent().find(".dropdown-second").removeClass("open");
+            element.parent().find("ul").slideUp(300, "swing");
         }
     });
 </script>
