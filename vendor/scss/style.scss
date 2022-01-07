@@ -691,6 +691,11 @@ video {
                         display: flex !important;
                         justify-content: space-around;
                         position: relative;
+                        border-bottom: 1px solid #424040;
+                        padding: 0;
+                        .icon {
+                            padding-right: 10px;
+                        }
                         &::after {
                             content: "";
                             position: absolute;

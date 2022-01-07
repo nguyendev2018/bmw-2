@@ -2183,6 +2183,11 @@ video {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     position: relative;
+    border-bottom: 1px solid #424040;
+    padding: 0;
+  }
+  .header-menu--list_item .authentication .icon {
+    padding-right: 10px;
   }
   .header-menu--list_item .authentication::after {
     content: "";
