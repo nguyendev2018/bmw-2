@@ -596,18 +596,8 @@ video {
 }
 
 @media screen and(min-width:992px) {
-    .header-menu {
-        &--list {
-            &_item {
-                &>li.dropdown {
-                    li.dropdown-hover {
-                        .box-icon {
-                            display: block;
-                        }
-                    }
-                }
-            }
-        }
+    .header-menu--list_item>li .dropdown li.dropdown-hover .box-icon {
+        display: block;
     }
 }
 

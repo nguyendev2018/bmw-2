@@ -2079,7 +2079,7 @@ video {
 }
 
 @media screen and (min-width: 992px) {
-  .header-menu--list_item > li.dropdown li.dropdown-hover .box-icon {
+  .header-menu--list_item > li .dropdown li.dropdown-hover .box-icon {
     display: block;
   }
 }
