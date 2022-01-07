@@ -2078,6 +2078,12 @@ video {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .header-menu--list_item > li.dropdown li.dropdown-hover .box-icon {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .footer-container {
     display: -ms-grid;
@@ -2120,6 +2126,7 @@ video {
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
+    padding-right: 0;
   }
   .header-menu--list_item > li > a {
     padding-right: 0;

@@ -595,6 +595,22 @@ video {
     }
 }
 
+@media screen and(min-width:992px) {
+    .header-menu {
+        &--list {
+            &_item {
+                &>li.dropdown {
+                    li.dropdown-hover {
+                        .box-icon {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 //ANCHOR 992
 @media screen and (max-width: 992px) {
     .footer {
@@ -635,6 +651,7 @@ video {
                         text-align: center;
                         padding-top: 15px;
                         padding-bottom: 15px;
+                        padding-right: 0;
                         &>a {
                             padding-right: 0;
                             padding-bottom: 10px;
