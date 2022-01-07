@@ -128,6 +128,9 @@
                     }
                 }
             }
+            .item-second {
+                position: relative;
+            }
             .box-close {
                 display: none;
                 width: 80%;
@@ -165,6 +168,9 @@
                 .dropdown {
                     line-height: 40px;
                     li.dropdown-hover {
+                        .box-icon {
+                            display: none;
+                        }
                         a {
                             padding-left: 45px;
                         }

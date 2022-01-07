@@ -309,6 +309,10 @@ p {
   visibility: hidden;
 }
 
+.header-menu--list_item .item-second {
+  position: relative;
+}
+
 .header-menu--list_item .box-close {
   display: none;
   width: 80%;
@@ -357,6 +361,10 @@ p {
 
 .header-menu--list_item > li .dropdown {
   line-height: 40px;
+}
+
+.header-menu--list_item > li .dropdown li.dropdown-hover .box-icon {
+  display: none;
 }
 
 .header-menu--list_item > li .dropdown li.dropdown-hover a {
@@ -601,11 +609,6 @@ p {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
 }
 
 .product h1 {
