@@ -546,6 +546,10 @@ video {
             line-height: 34px;
             color: black;
             text-align: left;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
             &:hover {
                 color: #feb518 !important;
             }
@@ -694,7 +698,8 @@ video {
                         border-bottom: 1px solid #424040;
                         padding: 0;
                         .icon {
-                            padding-right: 10px;
+                            margin-right: 10px;
+                            font-size: 17px;
                         }
                         &::after {
                             content: "";

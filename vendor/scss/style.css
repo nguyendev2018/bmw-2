@@ -2026,6 +2026,10 @@ video {
   line-height: 34px;
   color: black;
   text-align: left;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
 }
 
 .blog-list--item .blog-title:hover {
@@ -2187,7 +2191,8 @@ video {
     padding: 0;
   }
   .header-menu--list_item .authentication .icon {
-    padding-right: 10px;
+    margin-right: 10px;
+    font-size: 17px;
   }
   .header-menu--list_item .authentication::after {
     content: "";
