@@ -107,6 +107,7 @@
                     .icon {
                         font-size: 10px;
                         cursor: pointer;
+                        color: gray;
                     }
                 }
                 .icon {
@@ -144,9 +145,12 @@
                 padding-top: 34px;
                 padding-bottom: 34px;
                 position: relative;
+                padding-right: 30px;
+                &:last-child {
+                    padding-right: 0;
+                }
                 a {
                     font-size: 17px;
-                    padding-right: 30px;
                     color: #777777;
                     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
                     .icon {
@@ -173,6 +177,7 @@
                         }
                         a {
                             padding-left: 45px;
+                            padding-right: 45px;
                         }
                         .dropdown-second {
                             left: 100%;

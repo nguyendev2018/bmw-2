@@ -674,12 +674,26 @@ video {
                         }
                     }
                     .logo,
-                    .authentication,
                     .box-close {
                         display: block !important;
                     }
                     .logo {
                         margin-bottom: 30px;
+                    }
+                    .authentication {
+                        display: flex !important;
+                        justify-content: space-around;
+                        position: relative;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 1px;
+                            height: 100%;
+                            background: #414141;
+                        }
                     }
                 }
             }
