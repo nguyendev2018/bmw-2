@@ -1398,6 +1398,12 @@ a.forgot:hover {
   visibility: visible;
 }
 
+.breadcrumb-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .banner {
   position: relative;
 }

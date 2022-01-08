@@ -38,6 +38,16 @@
     }
 }
 
+//ANCHOR breadcrumb
+.breadcrumb {
+    &-container {
+        display: flex;
+    }
+    &-list {
+        &--item {}
+    }
+}
+
 //ANCHOR banner
 .banner {
     position: relative;
