@@ -770,11 +770,6 @@ p {
   padding-bottom: 20px;
 }
 
-.post-single h5 {
-  margin-bottom: 20px;
-  margin-top: 30px;
-}
-
 .post-single--desc {
   margin-top: 30px;
 }
@@ -840,6 +835,32 @@ p {
 
 .post-single--tag__list:last-child {
   margin-right: 0;
+}
+
+.post-single--share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.post-single--share__list {
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+.post-single--share__list > a {
+  color: white;
+  font-size: 12px;
+}
+
+.post-single--share__list.faceBook {
+  background: #3b5998;
+  color: white;
 }
 
 .navigation {

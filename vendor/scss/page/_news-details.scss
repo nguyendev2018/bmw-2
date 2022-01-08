@@ -42,10 +42,6 @@
         }
     }
     &-single {
-        h5 {
-            margin-bottom: 20px;
-            margin-top: 30px;
-        }
         padding-top: 30px;
         padding-bottom: 20px;
         &--desc {
@@ -97,6 +93,24 @@
                 }
                 &:last-child {
                     margin-right: 0;
+                }
+            }
+        }
+        &--share {
+            display: flex;
+            align-items: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            &__list {
+                padding: 5px 10px;
+                margin-left: 10px;
+                &>a {
+                    color: white;
+                    font-size: 12px;
+                }
+                &.faceBook {
+                    background: #3b5998;
+                    color: white;
                 }
             }
         }
