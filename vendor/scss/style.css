@@ -567,15 +567,15 @@ p {
   display: flex;
 }
 
+.footer .user-link ul li:hover a {
+  color: white;
+}
+
 .footer .user-link ul li a {
   color: gray;
   font-size: 14px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-}
-
-.footer .user-link ul li a :hover {
-  color: white;
 }
 
 .footer .info-contact--list {

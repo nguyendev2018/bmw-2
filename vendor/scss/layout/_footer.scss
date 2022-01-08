@@ -97,13 +97,13 @@
             li {
                 padding: 9px 0px;
                 display: flex;
+                &:hover a {
+                    color: white;
+                }
                 a {
                     color: gray;
                     font-size: 14px;
                     transition: 0.4s;
-                     :hover {
-                        color: white;
-                    }
                 }
             }
         }
