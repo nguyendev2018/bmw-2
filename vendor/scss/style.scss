@@ -792,6 +792,10 @@ video {
             }
         }
     }
+    .post-single--reply .reply-form .form-group {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0px;
+    }
 }
 
 //ANCHOR 576
@@ -836,6 +840,10 @@ video {
                 }
             }
         }
+    }
+    // blog-details
+    .post-single--img {
+        height: 100%;
     }
 }
 
