@@ -770,6 +770,11 @@ p {
   padding-bottom: 20px;
 }
 
+.post-single > h5 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .post-single--desc {
   margin-top: 30px;
 }
@@ -860,7 +865,18 @@ p {
 
 .post-single--share__list.faceBook {
   background: #3b5998;
-  color: white;
+}
+
+.post-single--share__list.googlePlus {
+  background: #de4e43;
+}
+
+.post-single--share__list.twitter {
+  background: #1ea1f3;
+}
+
+.post-single--share__list:hover {
+  opacity: 0.5;
 }
 
 .navigation {

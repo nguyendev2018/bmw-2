@@ -44,6 +44,10 @@
     &-single {
         padding-top: 30px;
         padding-bottom: 20px;
+        &>h5 {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
         &--desc {
             margin-top: 30px;
         }
@@ -110,7 +114,15 @@
                 }
                 &.faceBook {
                     background: #3b5998;
-                    color: white;
+                }
+                &.googlePlus {
+                    background: #de4e43;
+                }
+                &.twitter {
+                    background: #1ea1f3;
+                }
+                &:hover {
+                    opacity: 0.5;
                 }
             }
         }
