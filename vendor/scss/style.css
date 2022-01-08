@@ -1398,10 +1398,24 @@ a.forgot:hover {
   visibility: visible;
 }
 
-.breadcrumb-container {
+.breadcrumb-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.breadcrumb-list--item.home-active::after {
+  content: "\f105";
+  font-family: fontawesome;
+  margin-left: 7px;
+}
+
+.breadcrumb-list--item:last-child {
+  padding-right: 0;
+}
+
+.breadcrumb-list--item .active {
+  color: #feb518;
 }
 
 .banner {

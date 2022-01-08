@@ -40,11 +40,24 @@
 
 //ANCHOR breadcrumb
 .breadcrumb {
-    &-container {
-        display: flex;
-    }
+    &-container {}
     &-list {
-        &--item {}
+        display: flex;
+        &--item {
+            &.home-active {
+                &::after {
+                    content: "\f105";
+                    font-family: fontawesome;
+                    margin-left: 7px;
+                }
+            }
+            &:last-child {
+                padding-right: 0;
+            }
+            .active {
+                color: #feb518;
+            }
+        }
     }
 }
 
