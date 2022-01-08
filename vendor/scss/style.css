@@ -17,6 +17,10 @@ h2 {
   margin-bottom: 30px;
 }
 
+h5 {
+  font-size: 20px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -766,6 +770,11 @@ p {
   padding-bottom: 20px;
 }
 
+.post-single h5 {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
 .post-single--desc {
   margin-top: 30px;
 }
@@ -789,6 +798,48 @@ p {
   position: absolute;
   left: 20px;
   top: 20px;
+}
+
+.post-single--list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 3fr;
+      grid-template-columns: 2fr 3fr;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.post-single--list.two {
+  padding-top: 30px;
+  -ms-grid-columns: 4fr 2fr;
+      grid-template-columns: 4fr 2fr;
+}
+
+.post-single--tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.post-single--tag__list {
+  margin-right: 14px;
+  border: 1px solid gray;
+  padding: 5px 10px;
+}
+
+.post-single--tag__list > a {
+  color: gray;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.post-single--tag__list:last-child {
+  margin-right: 0;
 }
 
 .navigation {
