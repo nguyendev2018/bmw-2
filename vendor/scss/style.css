@@ -1293,7 +1293,7 @@ a.forgot:hover {
 
 .button-form {
   width: 150px;
-  height: 50px;
+  height: 40px;
   border-radius: 30px;
   display: block;
   background-image: -webkit-gradient(linear, left top, right top, from(#dc9b10), to(#feb518));
