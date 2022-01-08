@@ -603,11 +603,7 @@ video {
     }
 }
 
-@media screen and(min-width:992px) {
-    .header-menu--list_item>li .dropdown li.dropdown-hover .box-icon {
-        display: block;
-    }
-}
+@media screen and(min-width:992px) {}
 
 //ANCHOR 992
 @media screen and (max-width: 992px) {
@@ -658,6 +654,7 @@ video {
                             width: 34px;
                             height: 30px;
                             border: 1px solid #726e6e;
+                            display: block;
                         }
                         .dropdown {
                             width: 100%;

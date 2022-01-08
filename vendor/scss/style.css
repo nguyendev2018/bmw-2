@@ -1266,10 +1266,11 @@ p {
 }
 
 .general-body--right .input-item .icon {
-  margin-bottom: 30px;
   position: absolute;
-  top: 14px;
-  left: 14px;
+  left: 12px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .general-body a.text-form {
@@ -2086,12 +2087,6 @@ video {
   }
 }
 
-@media screen and (min-width: 992px) {
-  .header-menu--list_item > li .dropdown li.dropdown-hover .box-icon {
-    display: block;
-  }
-}
-
 @media screen and (max-width: 992px) {
   .footer-container {
     display: -ms-grid;
@@ -2144,6 +2139,7 @@ video {
     width: 34px;
     height: 30px;
     border: 1px solid #726e6e;
+    display: block;
   }
   .header-menu--list_item > li .dropdown {
     width: 100%;
