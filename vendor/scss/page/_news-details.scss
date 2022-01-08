@@ -1,0 +1,51 @@
+.post {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &-title {
+        &>a {
+            font-size: 26px;
+            color: black;
+            text-transform: capitalize;
+            &:hover {
+                color: $yellow_bold;
+            }
+        }
+    }
+    &-info {
+        &--list {
+            display: flex;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid gray;
+            &__item {
+                padding-right: 10px;
+                padding-left: 10px;
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 1px;
+                    height: 100%;
+                    border-right: 1px solid gray;
+                    transform: rotate(27deg);
+                }
+                &:first-child::before {
+                    display: none;
+                }
+                &>.icon {
+                    color: $yellow_bold;
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+    &-single {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        &--desc {
+            margin-top: 30px;
+        }
+    }
+}

@@ -76,7 +76,7 @@ a:hover {
 
 p {
   font-size: 16px !important;
-  line-height: 35px;
+  line-height: 30px;
 }
 
 .btn {
@@ -708,6 +708,66 @@ p {
   left: 0;
   border-left: 1px solid gray;
   height: 100%;
+}
+
+.post {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.post-title > a {
+  font-size: 26px;
+  color: black;
+  text-transform: capitalize;
+}
+
+.post-title > a:hover {
+  color: #feb518;
+}
+
+.post-info--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray;
+}
+
+.post-info--list__item {
+  padding-right: 10px;
+  padding-left: 10px;
+  position: relative;
+}
+
+.post-info--list__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  border-right: 1px solid gray;
+  -webkit-transform: rotate(27deg);
+          transform: rotate(27deg);
+}
+
+.post-info--list__item:first-child::before {
+  display: none;
+}
+
+.post-info--list__item > .icon {
+  color: #feb518;
+  margin-right: 4px;
+}
+
+.post-single {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.post-single--desc {
+  margin-top: 30px;
 }
 
 .navigation {
