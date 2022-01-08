@@ -40,22 +40,35 @@
 
 //ANCHOR breadcrumb
 .breadcrumb {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    padding-top: 20px;
+    padding-bottom: 20px;
     &-container {}
     &-list {
         display: flex;
         &--item {
-            &.home-active {
+            &.active {
+                position: relative;
+                margin-right: 10px;
+                padding-right: 20px;
                 &::after {
                     content: "\f105";
                     font-family: fontawesome;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 0;
                     margin-left: 7px;
                 }
             }
             &:last-child {
                 padding-right: 0;
             }
-            .active {
+            .text-active {
                 color: #feb518;
+            }
+            &>a {
+                color: gray;
             }
         }
     }
