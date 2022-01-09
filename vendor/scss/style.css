@@ -1217,6 +1217,22 @@ p {
   color: black;
 }
 
+.table-cart {
+  border-collapse: collapse;
+  margin-top: 6px;
+  margin-bottom: 60px;
+}
+
+.table-cart thead tr th {
+  border-bottom: 2px solid #dee2e6;
+  border-top: 1px solid silver;
+  padding: 10px 0px;
+}
+
+.table-cart tbody .product-img {
+  width: 80px;
+}
+
 .navigation {
   position: fixed;
   width: 300px;
