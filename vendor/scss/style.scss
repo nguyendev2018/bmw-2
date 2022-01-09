@@ -6,6 +6,7 @@
 @import "./page/shop-product";
 @import "./page/news-details";
 @import "./page/contact";
+@import "./page/cart";
 @import "./page/dashboard";
 @import "./page/login";
 .font-oswarld {
@@ -755,8 +756,12 @@ video {
             }
         }
     }
+    .send-form .form-group {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+    }
     .send-container {
-        grid-template-columns: 7fr 4fr;
+        grid-template-columns: 6fr 6fr;
     }
 }
 
@@ -804,6 +809,9 @@ video {
     .post-single--list__img {
         margin-right: 0;
         max-width: 100%;
+    }
+    .send-container {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
