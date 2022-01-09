@@ -1,3 +1,8 @@
+.table-reponsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
 .table-cart {
     border-collapse: collapse;
     margin-top: 6px;
@@ -8,7 +13,7 @@
             th {
                 border-bottom: 2px solid #dee2e6;
                 border-top: 1px solid silver;
-                padding: 10px 0px;
+                padding: 10px 20px;
             }
         }
     }
@@ -28,9 +33,9 @@
             }
         }
         .box-close {
-            width: 40px;
-            height: 40px;
-            line-height: 40px;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
             background: red;
             color: white;
             border-radius: 999px;
