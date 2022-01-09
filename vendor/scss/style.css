@@ -71,7 +71,7 @@ input {
   width: 100%;
 }
 
-tex ul {
+ul {
   margin: 0;
   list-style: none;
 }
@@ -1097,21 +1097,46 @@ p {
   grid-gap: 40px;
 }
 
+.send-form {
+  background: #f5f6f6;
+  padding: 30px;
+}
+
 .send-form .form-group {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  grid-gap: 30px;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  margin-bottom: 30px;
 }
 
-.send-form .form-group .form-control {
+.send-form .form-control {
   padding: 10px 20px;
   border: 1px solid #e1e6eb;
 }
 
-.send-form .form-group .form-control:hover, .send-form .form-group .form-control:focus {
+.send-form .form-control:hover, .send-form .form-control:focus {
   border-color: silver;
+}
+
+.send-form .submit {
+  background: #feb518;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+  margin-top: 30px;
+}
+
+.send-contact {
+  padding: 30px;
+  border: 1px solid #e1e6eb;
+}
+
+.send-contact > h2 {
+  margin-bottom: 13px;
 }
 
 .navigation {
