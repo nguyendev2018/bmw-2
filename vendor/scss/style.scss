@@ -755,6 +755,9 @@ video {
             }
         }
     }
+    .send-container {
+        grid-template-columns: 7fr 4fr;
+    }
 }
 
 //ANCHOR 768
