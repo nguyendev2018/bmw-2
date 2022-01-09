@@ -796,6 +796,10 @@ video {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 0px;
     }
+    .post-single--list__img {
+        margin-right: 0;
+        max-width: 100%;
+    }
 }
 
 //ANCHOR 576

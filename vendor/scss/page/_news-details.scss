@@ -56,11 +56,8 @@
             margin-bottom: 30px;
         }
         &--img {
-            height: 400px;
+            height: 100%;
             object-fit: cover;
-            &>img {
-                height: 100%;
-            }
         }
         &--desc {
             margin-top: 30px;
@@ -85,20 +82,18 @@
             }
         }
         &--list {
-            display: grid;
-            grid-template-columns: 2fr 3fr;
-            column-gap: 20px;
             padding-bottom: 30px;
             border-bottom: 1px solid #e9e9e9;
-            &__item {
-                overflow: hidden;
-                display: -webkit-box;
-                -webkit-line-clamp: 7;
-                -webkit-box-orient: vertical;
+            &__img {
+                float: left;
+                max-width: 400px;
+                margin-right: 40px;
             }
             &.two {
                 padding-top: 30px;
-                grid-template-columns: 4fr 2fr;
+                &__img {
+                    float: right;
+                }
             }
         }
         &--tag {
