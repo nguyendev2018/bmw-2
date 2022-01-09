@@ -66,7 +66,8 @@ img {
 }
 
 textarea,
-input {
+input,
+select {
   outline: none;
   width: 100%;
 }
@@ -1249,6 +1250,10 @@ p {
   border-radius: 999px;
   cursor: pointer;
   margin: 0 auto;
+}
+
+.cal-form--select {
+  border: 1px solid silver;
 }
 
 .navigation {
@@ -2838,6 +2843,10 @@ video {
   .send-container {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
+  }
+  .table-cart {
+    width: 900px;
+    overflow-x: auto;
   }
 }
 

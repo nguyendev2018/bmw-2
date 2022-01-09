@@ -39,3 +39,11 @@
         }
     }
 }
+
+.cal {
+    &-form {
+        &--select {
+            border: 1px solid silver;
+        }
+    }
+}
