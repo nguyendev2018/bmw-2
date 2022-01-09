@@ -17,6 +17,41 @@ h2 {
   margin-bottom: 30px;
 }
 
+h2.separator-yellow {
+  position: relative;
+}
+
+h2.separator-yellow::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: #feb518;
+}
+
+.separator-dots {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: #feb518;
+}
+
+.separator-dots::after, .separator-dots::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background: #feb518;
+}
+
+.separator-dots::after {
+  left: 100%;
+}
+
 h5 {
   font-size: 20px;
 }
@@ -713,6 +748,13 @@ p {
   left: 0;
   border-left: 1px solid gray;
   height: 100%;
+}
+
+.shop-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4fr 8fr;
+      grid-template-columns: 4fr 8fr;
 }
 
 .post {
