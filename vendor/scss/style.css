@@ -861,22 +861,19 @@ p {
 }
 
 .post-single--share {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 .post-single--share__list {
-  padding: 5px 10px;
-  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  border-radius: 4px;
 }
 
 .post-single--share__list > a {
+  padding: 5px 10px;
   color: white;
   font-size: 12px;
   display: -webkit-box !important;
@@ -901,6 +898,10 @@ p {
 
 .post-single--share__list.twitter {
   background: #1ea1f3;
+}
+
+.post-single--share__list.instagram {
+  background: #8a5a4e;
 }
 
 .post-single--share__list:hover {

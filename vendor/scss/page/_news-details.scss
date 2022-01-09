@@ -116,14 +116,15 @@
             }
         }
         &--share {
-            display: flex;
-            align-items: center;
             padding-top: 20px;
             padding-bottom: 20px;
             &__list {
-                padding: 5px 10px;
-                margin-left: 10px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                display: inline-block;
+                border-radius: 4px;
                 &>a {
+                    padding: 5px 10px;
                     color: white;
                     font-size: 12px;
                     display: flex !important;
@@ -140,6 +141,9 @@
                 }
                 &.twitter {
                     background: #1ea1f3;
+                }
+                &.instagram {
+                    background: #8a5a4e;
                 }
                 &:hover {
                     opacity: 0.5;
