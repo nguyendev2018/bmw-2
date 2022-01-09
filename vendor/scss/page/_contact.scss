@@ -2,11 +2,20 @@
     &-container {
         display: grid;
         grid-template-columns: 8fr 4fr;
+        grid-gap: 40px;
     }
     &-form {
         .form-group {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 30px;
             .form-control {
                 padding: 10px 20px;
+                border: 1px solid #e1e6eb;
+                &:hover,
+                &:focus {
+                    border-color: silver;
+                }
             }
         }
     }

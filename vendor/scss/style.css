@@ -68,9 +68,10 @@ img {
 textarea,
 input {
   outline: none;
+  width: 100%;
 }
 
-ul {
+tex ul {
   margin: 0;
   list-style: none;
 }
@@ -1093,10 +1094,24 @@ p {
   display: grid;
   -ms-grid-columns: 8fr 4fr;
       grid-template-columns: 8fr 4fr;
+  grid-gap: 40px;
+}
+
+.send-form .form-group {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
 }
 
 .send-form .form-group .form-control {
   padding: 10px 20px;
+  border: 1px solid #e1e6eb;
+}
+
+.send-form .form-group .form-control:hover, .send-form .form-group .form-control:focus {
+  border-color: silver;
 }
 
 .navigation {
