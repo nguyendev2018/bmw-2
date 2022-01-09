@@ -30,9 +30,6 @@ h2 {
 
 .separator-dots {
     position: relative;
-    width: 20px;
-    height: 20px;
-    background-color: $yellow-bold;
     &::after,
     &::before {
         content: "";
@@ -45,6 +42,11 @@ h2 {
     }
     &::after {
         left: 100%;
+    }
+    &--skew {
+        width: 20px;
+        height: 20px;
+        background-color: $yellow-bold;
     }
 }
 

@@ -33,9 +33,6 @@ h2.separator-yellow::after {
 
 .separator-dots {
   position: relative;
-  width: 20px;
-  height: 20px;
-  background-color: #feb518;
 }
 
 .separator-dots::after, .separator-dots::before {
@@ -50,6 +47,12 @@ h2.separator-yellow::after {
 
 .separator-dots::after {
   left: 100%;
+}
+
+.separator-dots--skew {
+  width: 20px;
+  height: 20px;
+  background-color: #feb518;
 }
 
 h5 {
@@ -755,8 +758,14 @@ p {
 .shop-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 4fr 8fr;
-      grid-template-columns: 4fr 8fr;
+  -ms-grid-columns: 2fr 8fr;
+      grid-template-columns: 2fr 8fr;
+  grid-gap: 40px;
+}
+
+.shop-list .form-control {
+  border: 1px solid #e1e6eb;
+  padding: 9px 12px;
 }
 
 .post {
