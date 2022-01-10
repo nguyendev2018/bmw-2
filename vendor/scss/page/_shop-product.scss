@@ -9,5 +9,43 @@
             border: 1px solid #e1e6eb;
             padding: 9px 12px;
         }
+        .shop-aside {
+            &--search {
+                .input-search {
+                    position: relative;
+                    .site-button {
+                        border: none;
+                        width: 40px;
+                        height: 100%;
+                        background: $yellow-bold;
+                        cursor: pointer;
+                        color: white;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        border-top-right-radius: 4px;
+                        border-bottom-right-radius: 4px;
+                    }
+                }
+            }
+            &--recent {
+                h6 {
+                    a {
+                        font-size: 14px;
+                    }
+                }
+                .recent-list {
+                    .item-img {
+                        width: 60px;
+                    }
+                    .item-content {
+                        display: inline-block;
+                    }
+                    .item-info {
+                        &--list {}
+                    }
+                }
+            }
+        }
     }
 }
