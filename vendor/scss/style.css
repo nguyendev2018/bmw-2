@@ -107,6 +107,11 @@ form {
           flex-direction: column;
 }
 
+.padding-content {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .content-padding {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -761,8 +766,8 @@ p {
 .shop-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 8fr;
-      grid-template-columns: 2fr 8fr;
+  -ms-grid-columns: 4fr 8fr;
+      grid-template-columns: 4fr 8fr;
   grid-gap: 40px;
 }
 
@@ -791,14 +796,52 @@ p {
 
 .shop-list .shop-aside--recent h6 a {
   font-size: 14px;
+  line-height: 20px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.shop-list .shop-aside--recent .recent-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .shop-list .shop-aside--recent .recent-list .item-img {
-  width: 60px;
+  width: 90px;
+  max-width: 90px;
+  min-width: 90px;
+  float: left;
 }
 
 .shop-list .shop-aside--recent .recent-list .item-content {
+  margin-left: 15px;
+}
+
+.shop-list .shop-aside--recent .recent-list .item-info--list {
   display: inline-block;
+  font-size: 14px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+.shop-list .shop-aside--recent .recent-list .item-info--list:last-child {
+  padding-right: 0;
+}
+
+.shop-list .shop-aside--recent .recent-list .item-info--list .icon {
+  color: #feb518;
+}
+
+.shop-list .shop-aside--recent .recent-list .item-info--list.active {
+  position: relative;
+}
+
+.shop-list .shop-aside--recent .recent-list .item-info--list.active::before {
+  content: "/";
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .post {
