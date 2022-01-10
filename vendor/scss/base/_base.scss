@@ -30,27 +30,29 @@ h2 {
 }
 
 .separator-dots {
-    font-size: 20px;
     position: relative;
+    &--skew {
+        width: 20px;
+        height: 20px;
+        background-color: $yellow-bold;
+        position: absolute;
+        bottom: 0;
+    }
     &::after,
     &::before {
         content: "";
         position: absolute;
-        top: 0;
+        bottom: 0;
+        transform: translateX(-50%);
         width: 80px;
         height: 3px;
         background: $yellow-bold;
     }
     &::before {
-        left: 0;
+        left: 40%;
     }
     &::after {
-        right: 0;
-    }
-    &--skew {
-        width: 20px;
-        height: 20px;
-        background-color: $yellow-bold;
+        left: 55%;
     }
 }
 
