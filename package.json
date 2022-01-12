@@ -18,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/nguyendev2018/bmw-2/issues"
   },
-  "homepage": "https://github.com/nguyendev2018/bmw-2#readme"
+  "homepage": "https://github.com/nguyendev2018/bmw-2#readme",
+  "dependencies": {
+    "json-serve": "^0.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
