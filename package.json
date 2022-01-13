@@ -23,7 +23,7 @@
     },
     "homepage": "https://github.com/nguyendev2018/bmw-2#readme",
     "devDependencies": {
-        "faker": "^6.6.6",
+        "@faker-js/faker": "^5.5.3",
         "nodemon": "^2.0.15"
     },
     "dependencies": {
