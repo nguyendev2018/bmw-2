@@ -1,7 +1,10 @@
-const faker = require("faker");
+const fake = require("Faker");
 // fake ra ngôn ngữ tiếng việt
-faker.locale = "vi";
+fake.locale = 'vi';
 // random data
-console.log(faker.commerce.department());
-console.log(faker.commerce.productName());
-console.log(faker.commerce.productDescription());
+console.log('sds');
+// console.log(fake.commerce.department());
+// console.log(faker.commerce.productName());
+// console.log(faker.commerce.productDescription());
+// console.log(faker.image.imageUrl());
+// console.log(faker.name.findName());
