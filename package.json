@@ -1,28 +1,30 @@
 {
-  "name": "bmw-2",
-  "version": "1.0.0",
-  "description": "how to use json-serve",
-  "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nguyendev2018/bmw-2.git"
-  },
-  "keywords": [
-    "json-serve"
-  ],
-  "author": "nguyendev",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nguyendev2018/bmw-2/issues"
-  },
-  "homepage": "https://github.com/nguyendev2018/bmw-2#readme",
-  "dependencies": {
-    "json-serve": "^0.1.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.15"
-  }
+    "name": "bmw-2",
+    "version": "1.0.0",
+    "description": "how to use json-serve",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "node main.js",
+        "start": "nodemon main.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nguyendev2018/bmw-2.git"
+    },
+    "keywords": [
+        "json-serve"
+    ],
+    "author": "nguyendev",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/nguyendev2018/bmw-2/issues"
+    },
+    "homepage": "https://github.com/nguyendev2018/bmw-2#readme",
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    },
+    "dependencies": {
+        "json-server": "^0.17.0"
+    }
 }
