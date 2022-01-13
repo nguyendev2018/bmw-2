@@ -1,5 +1,5 @@
-let fake = require('faker');
+let faker = require('faker');
 // fake ra ngôn ngữ tiếng việt
-fake.locale = 'vi';
+faker.locale = 'vi';
 // random data
-console.log(fake.commerce.department());
+console.log(faker.commerce.department());
