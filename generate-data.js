@@ -1,6 +1,6 @@
-const fake = require("Faker");
+// const fake = require("faker");
 // fake ra ngôn ngữ tiếng việt
-fake.locale = 'vi';
+// fake.locale = 'vi';
 // random data
 console.log('sds');
 // console.log(fake.commerce.department());
