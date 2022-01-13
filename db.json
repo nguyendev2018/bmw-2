@@ -1,9 +1,29 @@
 {
-    "posts": [
-        { "id": 1, "title": "json-server", "author": "typicode" }
-    ],
-    "comments": [
-        { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "createdAt": 1642041506703,
+      "id": 2
+    },
+    {
+      "title": "nguyen",
+      "author": "dev",
+      "createdAt": 1642041979635,
+      "id": 7
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some nguyen",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }
