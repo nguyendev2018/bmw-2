@@ -402,19 +402,24 @@ p {
   visibility: visible;
 }
 
-.header-menu--list_item > li.box-car {
+.header-menu--list_item > li.desktop .dropdown {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.header-menu--list_item > li.desktop .header-menu--list_item > li.box-car {
   border: 2px solid #feb518;
   background: #feb518;
   padding: 5px 16px;
   text-align: center;
 }
 
-.header-menu--list_item > li.box-car:hover {
+.header-menu--list_item > li.desktop .header-menu--list_item > li.box-car:hover {
   border: 2px solid #feb518;
   background: white;
 }
 
-.header-menu--list_item > li.box-car a {
+.header-menu--list_item > li.desktop .header-menu--list_item > li.box-car a {
   padding-right: 0;
   color: black;
 }
@@ -422,8 +427,6 @@ p {
 .header-menu--list_item > li .dropdown,
 .header-menu--list_item > li .dropdown-second {
   background: #222222;
-  opacity: 0;
-  visibility: hidden;
   position: absolute;
   z-index: 2;
   width: -webkit-max-content;

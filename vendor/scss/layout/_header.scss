@@ -150,12 +150,20 @@
                 &:last-child {
                     padding-right: 0;
                 }
-                &.desktop:hover .dropdown {
-                    transform: translateY(0px);
-                    opacity: 1;
-                    visibility: visible;
+                &.desktop {
+                    &:hover {
+                        .dropdown {
+                            transform: translateY(0px);
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                    .dropdown {
+                        opacity: 0;
+                        visibility: hidden;
+                    }
                 }
-                &.box-car {
+                &.desktop &.box-car {
                     border: 2px solid $yellow_bold;
                     background: $yellow_bold;
                     padding: 5px 16px;
@@ -172,8 +180,6 @@
                 .dropdown,
                 .dropdown-second {
                     background: #222222;
-                    opacity: 0;
-                    visibility: hidden;
                     position: absolute;
                     z-index: 2;
                     width: max-content;
