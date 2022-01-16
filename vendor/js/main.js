@@ -32,8 +32,6 @@ Array.from(filter_buttons).forEach(filter_button =>
                 }
             });
         })
-
-
     )
     // scrollUp 
 function scrollUp() {

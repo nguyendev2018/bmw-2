@@ -149,12 +149,23 @@
                 &:last-child {
                     padding-right: 0;
                 }
-                a {
-                    font-size: 17px;
-                    color: #777777;
-                    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
-                    .icon {
-                        font-size: 10px;
+                &.desktop {
+                    transform: translateY(0px);
+                    opacity: 1;
+                    visibility: visible;
+                }
+                &.box-car {
+                    border: 2px solid $yellow_bold;
+                    background: $yellow_bold;
+                    padding: 5px 16px;
+                    text-align: center;
+                    &:hover {
+                        border: 2px solid $yellow_bold;
+                        background: white;
+                    }
+                    a {
+                        padding-right: 0;
+                        color: black;
                     }
                 }
                 .dropdown,
@@ -190,24 +201,13 @@
                         }
                     }
                 }
-                &.box-car {
-                    border: 2px solid $yellow_bold;
-                    background: $yellow_bold;
-                    padding: 5px 16px;
-                    text-align: center;
-                    &:hover {
-                        border: 2px solid $yellow_bold;
-                        background: white;
-                    }
-                    a {
-                        padding-right: 0;
-                        color: black;
-                    }
-                }
-                &:hover .dropdown {
-                    opacity: 1;
-                    visibility: visible;
-                    transform: translateY(0%);
+            }
+            a {
+                font-size: 17px;
+                color: #777777;
+                transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+                .icon {
+                    font-size: 10px;
                 }
             }
             .logo,
