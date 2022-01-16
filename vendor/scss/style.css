@@ -376,6 +376,7 @@ p {
   display: none;
   width: 80%;
   text-align: right;
+  cursor: pointer;
 }
 
 .header-menu--list_item .box-close--icon {
@@ -394,7 +395,7 @@ p {
   padding-right: 0;
 }
 
-.header-menu--list_item > li.desktop {
+.header-menu--list_item > li.desktop:hover .dropdown {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
   opacity: 1;

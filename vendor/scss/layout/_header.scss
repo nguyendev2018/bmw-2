@@ -136,6 +136,7 @@
                 display: none;
                 width: 80%;
                 text-align: right;
+                cursor: pointer;
                 &--icon {
                     color: white;
                 }
@@ -149,7 +150,7 @@
                 &:last-child {
                     padding-right: 0;
                 }
-                &.desktop {
+                &.desktop:hover .dropdown {
                     transform: translateY(0px);
                     opacity: 1;
                     visibility: visible;
