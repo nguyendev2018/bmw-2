@@ -158,7 +158,8 @@
                             visibility: visible;
                         }
                     }
-                    .dropdown {
+                    .dropdown,
+                    .dropdown-second {
                         opacity: 0;
                         visibility: hidden;
                     }
@@ -189,7 +190,7 @@
                 }
                 .dropdown {
                     line-height: 40px;
-                    li.dropdown-hover {
+                    .dropdown-hover {
                         .box-icon {
                             display: none;
                         }

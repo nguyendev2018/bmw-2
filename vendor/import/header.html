@@ -116,7 +116,7 @@
                     <a href="" class="logo">
                         <img src="images/logo/logo-header.png" alt="">
                     </a>
-                    <li class="item-first item-dropdown ">
+                    <li class="item-first item-dropdown desktop">
                         <a href=""> Home
                         </a>
                         <div class="box-icon">
@@ -247,10 +247,7 @@
         liMenu.forEach(element => {
             const windowWidth = $(window).width();
             windowWidth > 992 ? element.classList.add("desktop") : element.classList.remove("desktop");
-
         });
-
-
     }
     window.addEventListener("resize", widthMenu)
 </script>
