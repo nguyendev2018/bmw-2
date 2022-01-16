@@ -192,6 +192,8 @@
     let nut = document.querySelectorAll('.item-click');
     let btn_cancel = document.querySelectorAll('.btn-cancel');
     let layer_black = document.querySelector('.layer-black');
+    let box_close = document.querySelector('.box-close');
+    let menu_mobile = document.querySelector('.header-menu--list_item');
     for (let i = 0; i < nut.length; i++) {
         nut[i].addEventListener("click", function() {
             var content_show = this.getAttribute("data-show");
@@ -204,7 +206,10 @@
             }
         });
     }
-    //ANCHOR load header 
+    box_close.addEventListener("click", () => {
+            menu_mobile.style.display = "none";
+        })
+        //ANCHOR load header 
     $(".item-first").on("click", function(e) {
         var element = $(this);
         if (!element.hasClass("open")) {
