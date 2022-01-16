@@ -192,6 +192,21 @@ p {
   }
 }
 
+.form-check-auth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form-check-auth .form-check-input {
+  width: 10%;
+}
+
 .header-authentication {
   text-align: right;
 }
@@ -2093,6 +2108,10 @@ a.forgot:hover {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .font-oswarld {
   font-family: "Oswald", sans-serif;
 }
@@ -2817,26 +2836,28 @@ video {
   margin-right: 15px;
 }
 
-.cricle-fixed {
-  width: 40px;
-  height: 40px;
+.scroll-up {
   position: fixed;
-  background: black;
-  top: 50%;
-  right: 7%;
-  -webkit-transform: translateY(-50%) translateX(36%);
-          transform: translateY(-50%) translateX(36%);
-  border-radius: 16px;
-  cursor: pointer;
+  bottom: 50px;
+  right: 50px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background: white;
   opacity: 0;
+  visibility: hidden;
+  display: block;
+  -webkit-box-shadow: 0 4px 12px rgba(51, 51, 51, 0.231);
+          box-shadow: 0 4px 12px rgba(51, 51, 51, 0.231);
+  z-index: 9;
 }
 
-.cricle-fixed i {
-  color: white;
+.scroll-up .icon-up {
+  color: #feb518;
 }
 
-.cricle-fixed .show {
+.scroll-up.active {
   opacity: 1;
+  visibility: visible;
 }
 
 @media screen and (max-width: 1200px) {
@@ -2924,7 +2945,7 @@ video {
   }
   .header-menu--list_item .item-dropdown {
     background: #222222;
-    border-bottom: 1px dashed #20c256;
+    border-bottom: 1px dashed #675f5f;
   }
   .header-menu--list_item .item-dropdown .box-icon {
     top: 25px;

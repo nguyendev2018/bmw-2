@@ -1,4 +1,14 @@
 //ANCHOR header-top
+.form-check-auth {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .form-check-input {
+        width: 10%;
+    }
+}
+
 .header {
     &-authentication {
         text-align: right;

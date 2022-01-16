@@ -9,6 +9,10 @@
 @import "./page/cart";
 @import "./page/dashboard";
 @import "./page/login";
+html {
+    scroll-behavior: smooth;
+}
+
 .font-oswarld {
     font-family: "Oswald", sans-serif;
 }
@@ -604,22 +608,24 @@ video {
     }
 }
 
-.cricle-fixed {
-    width: 40px;
-    height: 40px;
+.scroll-up {
     position: fixed;
-    background: black;
-    top: 50%;
-    right: 7%;
-    transform: translateY(-50%) translateX(36%);
-    border-radius: 16px;
-    cursor: pointer;
+    bottom: 50px;
+    right: 50px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: white;
     opacity: 0;
-    i {
-        color: white;
+    visibility: hidden;
+    display: block;
+    box-shadow: 0 4px 12px rgba(51, 51, 51, 0.231);
+    z-index: 9;
+    .icon-up {
+        color: $yellow-bold;
     }
-    .show {
+    &.active {
         opacity: 1;
+        visibility: visible;
     }
 }
 
@@ -705,7 +711,7 @@ video {
                     }
                     .item-dropdown {
                         background: #222222;
-                        border-bottom: 1px dashed #20c256;
+                        border-bottom: 1px dashed #675f5f;
                         .box-icon {
                             top: 25px;
                             transform: translate(-41%, -50%);
