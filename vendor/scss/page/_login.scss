@@ -30,6 +30,19 @@
         flex-direction: column;
         margin-top: 40px;
         background: white;
+        .form-check-auth {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            .form-check-input {
+                width: 10%;
+            }
+        }
+        .form-bottom {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
         &>.btn-cancel {
             font-size: 20px;
             cursor: pointer;

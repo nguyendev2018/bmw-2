@@ -570,12 +570,17 @@ video {
         border-radius: 4px;
         background: white;
         box-shadow: 0 0 20px 0 #0000001a;
+        display: flex !important;
+        align-items: stretch;
+        flex-direction: column;
         .layer-img {
             height: 232px;
             object-fit: cover;
         }
         .layer-text {
             padding: 30px;
+            display: flex;
+            flex-direction: column;
             .layer-text--top {
                 display: flex;
                 align-items: center;
@@ -683,8 +688,6 @@ video {
                     background: #222222;
                     z-index: 99;
                     padding-top: 20px;
-                    overflow: hidden;
-                    overflow-y: scroll;
                     &>li {
                         width: 100%;
                         text-align: center;
@@ -700,6 +703,7 @@ video {
                             height: 30px;
                             border: 1px solid #726e6e;
                             display: block;
+                            cursor: pointer;
                         }
                         .dropdown {
                             width: 100%;

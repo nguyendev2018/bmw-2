@@ -192,21 +192,6 @@ p {
   }
 }
 
-.form-check-auth {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.form-check-auth .form-check-input {
-  width: 10%;
-}
-
 .header-authentication {
   text-align: right;
 }
@@ -1989,6 +1974,26 @@ p {
   background: white;
 }
 
+.general-body--right .form-check-auth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.general-body--right .form-check-auth .form-check-input {
+  width: 10%;
+}
+
+.general-body--right .form-bottom {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .general-body--right > .btn-cancel {
   font-size: 20px;
   cursor: pointer;
@@ -2785,6 +2790,16 @@ video {
   background: white;
   -webkit-box-shadow: 0 0 20px 0 #0000001a;
           box-shadow: 0 0 20px 0 #0000001a;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .blog-list--item .layer-img {
@@ -2795,6 +2810,13 @@ video {
 
 .blog-list--item .layer-text {
   padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .blog-list--item .layer-text .layer-text--top {
@@ -2913,8 +2935,6 @@ video {
     background: #222222;
     z-index: 99;
     padding-top: 20px;
-    overflow: hidden;
-    overflow-y: scroll;
   }
   .header-menu--list_item > li {
     width: 100%;
@@ -2932,6 +2952,7 @@ video {
     height: 30px;
     border: 1px solid #726e6e;
     display: block;
+    cursor: pointer;
   }
   .header-menu--list_item > li .dropdown {
     width: 100%;
