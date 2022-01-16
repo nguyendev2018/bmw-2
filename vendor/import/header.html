@@ -116,7 +116,7 @@
                     <a href="" class="logo">
                         <img src="images/logo/logo-header.png" alt="">
                     </a>
-                    <li class="item-first item-dropdown desktop">
+                    <li class="item-first item-dropdown ">
                         <a href=""> Home
                         </a>
                         <div class="box-icon">
@@ -124,7 +124,7 @@
                             <i class="fal icon icon-up fa-chevron-up"></i>
                         </div>
                         <ul class="dropdown">
-                            <li class="item-second dropdown-hover item-dropdown desktop">
+                            <li class="item-second dropdown-hover item-dropdown ">
                                 <div class="box-icon">
                                     <i class="fal icon icon-down fa-chevron-down"></i>
                                     <i class="fal icon icon-up fa-chevron-up"></i>
@@ -241,4 +241,16 @@
             element.parent().find("ul").slideUp(300, "swing");
         }
     });
+    // resize width menu
+    function widthMenu() {
+        const liMenu = document.querySelectorAll('.item-first');
+        liMenu.forEach(element => {
+            const windowWidth = $(window).width();
+            windowWidth > 992 ? element.classList.add("desktop") : element.classList.remove("desktop");
+
+        });
+
+
+    }
+    window.addEventListener("resize", widthMenu)
 </script>
