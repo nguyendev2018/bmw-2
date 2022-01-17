@@ -13,7 +13,6 @@ bg.onclick = function() {
     }
     // filter
 const filter_buttons = document.querySelectorAll('.product-details .product-details--list');
-
 const filter_boxs = document.querySelectorAll('.product-details--item .box-item');
 Array.from(filter_buttons).forEach(filter_button =>
         // 

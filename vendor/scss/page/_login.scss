@@ -11,6 +11,7 @@
     background: white;
     box-shadow: 2px 1px 9px 0px #84808059;
     transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+    &.mobile,
     &.active {
         transform: translateX(-50%) translateY(-50%) scale(1);
     }

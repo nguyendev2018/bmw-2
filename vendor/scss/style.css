@@ -1948,7 +1948,7 @@ p {
   transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
 }
 
-.general-body.active {
+.general-body.mobile, .general-body.active {
   -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
           transform: translateX(-50%) translateY(-50%) scale(1);
 }
@@ -2939,6 +2939,14 @@ video {
     background: #222222;
     z-index: 99;
     padding-top: 20px;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  }
+  .header-menu--list_item.active {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
   .header-menu--list_item > li {
     width: 100%;

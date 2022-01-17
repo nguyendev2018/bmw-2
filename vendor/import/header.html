@@ -106,7 +106,7 @@
                 <img src="images/logo/logo-header.png" alt="">
             </a>
             <div class="header-menu--list">
-                <div class=" header-left button">
+                <div class=" header-left button icon-bars">
                     <span class="line fal fa-bars "></span>
                 </div>
                 <ul class="header-menu--list_item">
@@ -168,14 +168,6 @@
 
 <script>
     let box_button = $(".box-button");
-    $(".header-mobile--close").click(function() {
-        $(".header-mobile").toggleClass("hide-bar");
-        $(".header-mobile").removeClass("show-bar");
-    });
-    $(".header-left.button").click(function() {
-        $(".header-mobile").toggleClass("show-bar");
-        $(".header-mobile").removeClass("hide-bar");
-    });
     for (let i = 0; i < box_button.length; i++) {
         $(box_button[i]).on("click", function() {
             $(this).parent().find(".sub-menu").slideToggle();
@@ -192,7 +184,7 @@
     let nut = document.querySelectorAll('.item-click');
     let btn_cancel = document.querySelectorAll('.btn-cancel');
     let layer_black = document.querySelector('.layer-black');
-    let box_close = document.querySelector('.box-close');
+    let icon_bars = document.querySelectorAll('.icon-bars');
     let menu_mobile = document.querySelector('.header-menu--list_item');
     for (let i = 0; i < nut.length; i++) {
         nut[i].addEventListener("click", function() {
@@ -206,10 +198,13 @@
             }
         });
     }
-    box_close.addEventListener("click", () => {
-            menu_mobile.style.display = "none";
+    // icon-bars add/close
+    icon_bars.forEach(element => {
+        element.addEventListener("click", () => {
+            menu_mobile.classList.toggle("active");
         })
-        //ANCHOR load header 
+    });
+    //ANCHOR load header 
     $(".item-first").on("click", function(e) {
         var element = $(this);
         if (!element.hasClass("open")) {
