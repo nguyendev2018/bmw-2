@@ -88,16 +88,25 @@ a.forgot {
 
 .button-form {
     width: 150px;
-    height: 40px;
-    border-radius: 30px;
-    display: block;
-    background-image: linear-gradient(to right, #dc9b10, $yellow_bold);
+    height: 50px;
+    background: $yellow-bold;
     display: flex !important;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     margin-top: 30px;
-    color: white;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s;
+    span {
+        color: white;
+        mix-blend-mode: difference;
+        transition: transform 0.4s cubic-bezier(0.2, 1, 0.8, 1);
+    }
+    &:hover {
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+        span {
+            transform: translate3d(-10px, 0, 0);
+        }
+    }
 }
 
 .login {
