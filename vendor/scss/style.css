@@ -3091,12 +3091,6 @@ video {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
-  .header-left--desktop .__call {
-    font-size: 11px;
-  }
-  .header-authentication span {
-    font-size: 11px;
-  }
   .slide-limit .slide-li {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
