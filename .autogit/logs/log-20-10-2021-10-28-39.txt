@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Sat Nov 20 2021 10:28:39 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* index.html
+* vendor/js/main.js
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:

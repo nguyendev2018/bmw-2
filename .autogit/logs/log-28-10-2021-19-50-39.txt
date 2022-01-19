@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Sun Nov 28 2021 19:50:39 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* index.html
+* vendor/scss/style.css
+* vendor/scss/style.css.map
+* vendor/scss/style.scss
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:

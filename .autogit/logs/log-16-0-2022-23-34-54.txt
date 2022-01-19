@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Sun Jan 16 2022 23:34:54 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* vendor/import/header.html
+* vendor/scss/layout/_footer.scss
+* vendor/scss/style.css
+* vendor/scss/style.css.map
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:

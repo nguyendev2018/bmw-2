@@ -1,0 +1,22 @@
+-------------------- Auto-Git Log --------------------
+		Sun Jan 09 2022 13:18:08 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* template.html
+* vendor/scss/base/_base.scss
+* vendor/scss/style.css
+* vendor/scss/style.css.map
+* vendor/scss/style.scss
+
+
+Created files:
+* shop-product.html
+* vendor/scss/page/_shop-product.scss
+
+
+Deleted files:
+* vendor/css/font-awesome.min.css
+
+
+Renamed files:

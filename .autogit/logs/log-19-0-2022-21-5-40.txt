@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Wed Jan 19 2022 21:05:40 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* index.html
+* vendor/js/api/blogApi.js
+
+
+Created files:
+* vendor/js/blogs.js
+
+
+Deleted files:
+
+
+Renamed files:

@@ -1,0 +1,30 @@
+-------------------- Auto-Git Log --------------------
+		Fri Nov 19 2021 17:05:45 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* index.html
+* vendor/scss/style.css
+* vendor/scss/style.css.map
+* vendor/scss/style.scss
+
+
+Created files:
+* images/product-details/banner.jpg
+
+
+Deleted files:
+
+
+Renamed files:
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]

@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Mon Jan 17 2022 11:38:56 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* login.html
+* vendor/scss/page/_login.scss
+* vendor/scss/style.css
+* vendor/scss/style.css.map
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:

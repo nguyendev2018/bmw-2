@@ -1,0 +1,20 @@
+-------------------- Auto-Git Log --------------------
+		Wed Jan 19 2022 21:41:40 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* index.html
+* vendor/js/home.js
+
+
+Created files:
+* vendor/js/utils/blogs.js
+* vendor/js/utils/common.js
+* vendor/js/utils/index.js
+
+
+Deleted files:
+* vendor/js/blogs.js
+
+
+Renamed files:

@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Mon Jan 10 2022 10:21:42 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* shop-product.html
+* vendor/scss/base/_base.scss
+* vendor/scss/page/_shop-product.scss
+* vendor/scss/style.css
+* vendor/scss/style.css.map
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:

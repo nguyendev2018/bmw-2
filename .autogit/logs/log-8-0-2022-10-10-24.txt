@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Sat Jan 08 2022 10:10:24 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* vendor/scss/layout/_footer.scss
+* vendor/scss/style.css
+* vendor/scss/style.css.map
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:

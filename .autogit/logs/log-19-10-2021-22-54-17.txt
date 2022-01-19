@@ -1,0 +1,15 @@
+-------------------- Auto-Git Log --------------------
+		Fri Nov 19 2021 22:54:17 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+
+
+Created files:
+* images/product-details/file.pdf
+
+
+Deleted files:
+
+
+Renamed files:

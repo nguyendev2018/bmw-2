@@ -1,0 +1,22 @@
+-------------------- Auto-Git Log --------------------
+		Sat Jan 08 2022 09:10:08 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* index.html
+* vendor/scss/page/_login.scss
+* vendor/scss/style.css
+* vendor/scss/style.css.map
+* vendor/scss/style.scss
+
+
+Created files:
+* vendor/js/isotope.pkgd.min.js
+
+
+Deleted files:
+* vendor/js/bootstrap.bundle.min.js
+* vendor/js/bootstrap.min.js
+
+
+Renamed files:

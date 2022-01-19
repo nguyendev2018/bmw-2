@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Sun Jan 09 2022 15:42:09 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* contact.html
+* vendor/scss/base/_base.scss
+* vendor/scss/page/_contact.scss
+* vendor/scss/style.css
+* vendor/scss/style.css.map
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:

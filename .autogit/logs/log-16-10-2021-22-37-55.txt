@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Tue Nov 16 2021 22:37:55 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* login.html
+* vendor/scss/page/_login.scss
+* vendor/scss/style.css
+* vendor/scss/style.css.map
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:

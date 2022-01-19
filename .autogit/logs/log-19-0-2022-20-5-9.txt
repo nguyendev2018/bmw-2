@@ -1,0 +1,25 @@
+-------------------- Auto-Git Log --------------------
+		Wed Jan 19 2022 20:05:09 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+
+
+Created files:
+* images/blog/cuu-ceo-bmw.jpg
+* images/blog/muon-y-tuong.jpg
+* images/blog/nhung-thanh-tuu.jpg
+* images/blog/thiet-ke-lai-vo-lang.jpg
+* images/blog/xuat-phim-xe-dien.jpg
+
+
+Deleted files:
+* images/blog/1.jpg
+* images/blog/2.jpg
+* images/blog/3.jpg
+* images/blog/blog1.jpg
+
+
+Renamed files:
+* [object Object]
+* [object Object]

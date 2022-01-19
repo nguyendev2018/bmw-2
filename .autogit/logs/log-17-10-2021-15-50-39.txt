@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Wed Nov 17 2021 15:50:39 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* vendor/import/footer.html
+* vendor/import/header.html
+* vendor/scss/page/_login.scss
+* vendor/scss/style.css
+* vendor/scss/style.css.map
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:

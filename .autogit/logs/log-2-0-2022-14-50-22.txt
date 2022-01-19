@@ -1,0 +1,24 @@
+-------------------- Auto-Git Log --------------------
+		Sun Jan 02 2022 14:50:22 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* dashboard.html
+* index.html
+* product-details.html
+* vendor/import/footer.html
+* vendor/scss/base/_base.scss
+* vendor/scss/layout/_footer.scss
+* vendor/scss/style.css
+* vendor/scss/style.css.map
+
+
+Created files:
+
+
+Deleted files:
+* vendor/css/bootstrap-datepicker.css
+* vendor/css/bootstrap.css
+
+
+Renamed files:

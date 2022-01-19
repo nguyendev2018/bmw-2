@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Sun Jan 09 2022 13:48:17 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* shop-product.html
+
+
+Created files:
+* contact.html
+
+
+Deleted files:
+
+
+Renamed files:

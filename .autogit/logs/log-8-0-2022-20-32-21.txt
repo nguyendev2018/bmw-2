@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Sat Jan 08 2022 20:32:21 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* blog-details.html
+* vendor/scss/page/_news-details.scss
+* vendor/scss/style.css
+* vendor/scss/style.css.map
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:

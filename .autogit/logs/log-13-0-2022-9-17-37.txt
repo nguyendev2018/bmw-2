@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Thu Jan 13 2022 09:17:37 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* package-lock.json
+* package.json
+
+
+Created files:
+* main.js
+
+
+Deleted files:
+
+
+Renamed files:

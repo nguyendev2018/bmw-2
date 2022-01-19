@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Wed Jan 19 2022 13:23:12 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* vendor/js/api/axiosClient.js
+
+
+Created files:
+* vendor/js/api/bannerApi.js
+* vendor/js/banners.js
+* vendor/js/home.js
+
+
+Deleted files:
+
+
+Renamed files:

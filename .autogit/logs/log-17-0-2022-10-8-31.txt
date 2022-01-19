@@ -1,0 +1,15 @@
+-------------------- Auto-Git Log --------------------
+		Mon Jan 17 2022 10:08:31 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* vendor/import/header.html
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:
