@@ -11,5 +11,14 @@ const blogs = {
     add(data) {
         const url = `/blogs`;
         return axiosClient.post(url, data)
+    },
+    update(data) {
+        const url = `/blogs/${data.id}`;
+        return axiosClient.patch(url, data)
+    },
+    delete(id) {
+        const url = `/blogs/${id}`;
+        return axiosClient.delete(url)
     }
 }
+export default blogs;
